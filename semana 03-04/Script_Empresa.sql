@@ -2,9 +2,9 @@
 -- Script do Banco de Dados Empresa 
 
 begin;
-create schema empresa_seunome; -- inclua seu nome
+create schema empresa_jose_vitor; -- inclua seu nome
 -- O comando 'create database' é semelhante ao comando 'create schema'
-use empresa_seunome;
+use empresa_jose_vitor;
 
 -- Criando as tabelas
 create table FUNCIONARIO(
