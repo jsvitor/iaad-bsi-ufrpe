@@ -16,7 +16,7 @@ where ClinicaMedico.CargaHorariaSemanal > 20 and CodEspec = (select CodEspec fro
 -- 4. Listar os nomes dos(as) pacientes que possuem consultas agendadas entre 30/08/2021 e 13/09/2021.
 select P.NomePac
 from Paciente as P inner join AgendaConsulta as AC
-where P.CpfPaciente = AC.CpfPaciente;
+where P.CpfPaciente = AC.CpfPaciente and AC.DataHora between '30-08-2021 00:00:00' and '13-09-2021 00:00:00';
 
 -- 5. Para cada médico/a que inicia com a letra 'A', listar seu nome completo, sua especialidade e o(s) nome(s) da(s) clínica(s) em que atua(m).
 select NomeMed, NomeEspec, NomeCli
