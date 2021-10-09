@@ -48,9 +48,9 @@ Repositório criado para armazenar o conteúdo das atividades práticas da disci
 
 Repositório criado para armazenar o conteúdo das atividades práticas da disciplina de IAAD, ofertada pelo curso de Bacharelado em Sistemas de Informação da UFRPE.
 
-### Semana 01 à 02
+## Semana 01 à 02
 
-### Semana 03 à 04
+## Semana 03 à 04
 <details>
   <summary><b>curadoria da Profa. Roberta Macêdo</b>🐱‍🚀</summary>
   Objetivos das semanas 2 e 3:
@@ -90,11 +90,11 @@ Repositório criado para armazenar o conteúdo das atividades práticas da disci
 </details>
 
 
-# Semana 05 à 06
+## Semana 05 à 06
 <details>
   <summary>Curadoria da Profa. Roberta Macêdo</summary>
   
-  ## Objetivos das semanas 5 e 6:  
+  ### Objetivos das semanas 5 e 6:  
    * Compreender os diferentes tipos de junção: Inner Join, left/right Join, full outer join, cross join etc.
    * Entender como especificar consultas SQL aninhadas.
    * Compreender as principais funções de agregação e agrupamento (Group By e Having).
@@ -102,7 +102,7 @@ Repositório criado para armazenar o conteúdo das atividades práticas da disci
    * Compreender o conceito de visões (View) e como elas podem ser implementadas pelo SGBD.
    * Realizar a atividade avaliativa.
   
-  ### MATERIAIS DIDÁTICOS DE APOIO AOS ESTUDOS:
+  #### MATERIAIS DIDÁTICOS DE APOIO AOS ESTUDOS:
 
   **Videoaula sobre os tipos de junção (reutilizada do período anterior):**
   * 🎬 https://www.loom.com/share/61584a42eee442b598b303120852beca
