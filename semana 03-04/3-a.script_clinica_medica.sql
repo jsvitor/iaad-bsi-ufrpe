@@ -81,6 +81,7 @@ insert into Especialidade(CodEspec, NomeEspec, Descricao) values (0001, 'Clínic
 insert into Especialidade(CodEspec, NomeEspec, Descricao) values (0002, 'Pediatria', 'Assistência à criança e ao adolescente.');
 insert into Especialidade values (0003, 'Odontologista', 'Cuidados bucais');
 insert into Especialidade values (0033, 'dermatologista', 'Especializado em pele e cabelos');
+insert into Especialidade values (0077, 'Psicologista', 'Terapia comportamental');
 
 
 -- inserções na relação Clínica
@@ -106,6 +107,8 @@ insert into Medico values (2033, 'Pedro', 'M', '81999999911', 'pedrobeltrao@hsc.
 insert into Medico values (2133, 'Telma', 'F', '81999999912', 'telmasilva@hsc.com.br', 0033);
 insert into Medico values (2233, 'Francisca', 'F', '81999999913', 'drfran@hsc.com.br', 0033);
 insert into Medico values (2012, 'Ana', 'F', '81999999943', 'anaf@hsgr.com.br', 0003);
+insert into Medico values (2207, 'Heloise', 'F', '81944448912', 'heloises@shn.io', 0077);
+
 -- describe Medico;
 
 -- inserções na relação ClinicaMedico
