@@ -89,6 +89,6 @@ group by ClinicaMedico;
 select Especialidade.CodEspec, Especialidade.NomeEspec, count(Medico.CodMed) as "Nº de medicos"
 from Especialidade left join Medico using(CodEspec)
 group by Especialidade.CodEspec
-having count(Medico.CodMed) > 20;
+having count(Medico.CodMed) > 10;
 
 
