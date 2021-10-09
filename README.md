@@ -3,6 +3,34 @@
 Repositório criado para armazenar o conteúdo das atividades práticas da disciplina de IAAD, ofertada pelo curso de Bacharelado em Sistemas de Informação da UFRPE.
 
 ## Semana 01 à 02
+<details>
+  <summary>Curadoria da Profa. Roberta Macêdo 🐱‍🚀</summary>
+    
+  ### Objetivos das semanas 1 e 2:
+  * Compreender os conceitos introdutórios sobre banco de dados e usuários de BD.
+  * Entender as vantagens da abordagem baseada em Sistema Gerenciador de Banco de Dados (SGBD).
+  * Compreender os conceitos de modelos de dados, esquemas e instâncias.
+  * Entender a arquitetura três esquemas (também conhecida como arquitetura ANSI/SPARC) e a importância da independência de dados.
+  * Realizar as atividades propostas: avaliação diagnóstica (formulário online)  e lista de exercícios (atividade avaliativa baseada nos capítulos 01 e 02: prazo de 15 dias)
+
+  #### MATERIAIS DIDÁTICOS DE APOIO AOS ESTUDOS:
+
+  Orientações iniciais sobre a disciplina
+ * 🎬  https://drive.google.com/file/d/1zH3rYW1y8prU3pZ0NvD423QNG_38E7Tz/view?usp=sharing
+ * 🎬 Videoaula da Profa. Sarajane Peres - UNIVESP: https://youtu.be/pmAxIs5U1KI
+
+📖 Leitura dos Capítulos 1 e 2 (páginas 2 a 36) do livro 'Sistemas de Banco de Dados', 6ª Edição, de Ramez Elmasri e Shamkant Navathe.
+
+(Opcional) Para videoaulas mais detalhadas, acesse a playlist "Banco de Dados 2 - Partes 1 a 4" do Prof. Wandré Nunes - UNIFEI:
+* 🎬 https://youtu.be/JXvaE24q0dE
+* 🎬 https://youtu.be/cpyplRQFjUw
+* 🎬 https://youtu.be/062Txe5Wsig
+* 🎬 https://youtu.be/9TouzGG4p_Y
+
+
+Bons estudos!
+
+</details>
 
 ## Semana 03 à 04
 <details>
