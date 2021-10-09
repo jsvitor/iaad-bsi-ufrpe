@@ -78,3 +78,17 @@ from Medico right join ClinicaMedico using(CodMed)
 group by ClinicaMedico;
 
 
+
+/*
+ * E) Especifique o comando SQL que retorne para cada especialidade, o código e 
+ * o nome da especialidade, seguido do número de médicos (quantidade total) que 
+ * atuam na especialidade. Considere que apenas as especialidades com mais de 10
+ * médicos devem aparecer no resultado da consulta.
+ *
+ */
+select Especialidade.CodEspec, Especialidade.NomeEspec, count(Medico.CodMed) as "Nº de medicos"
+from Especialidade left join Medico using(CodEspec)
+group by Especialidade.CodEspec
+having count(Medico.CodMed) > 20;
+
+
