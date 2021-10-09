@@ -89,6 +89,7 @@ insert into Clinica(CodCli, NomeCli, Endereco, Telefone, Email)
 values (1001, 'Renascer', 'Rua Exp. Guilherme Salvador, 57 - Recife', '81995374533', 'oi@renascer.com');
 insert into Clinica values (1002, 'Sim!', 'Av. Vieira Aguiar, 3234 - Olinda', '81995374537', 'contato@sim.com.br');
 insert into Clinica values (1003, 'Hapvida', 'Rod BR 101, km 30 - Recife', '81995373544', 'hapvida@sac.com.br');
+insert into Clinica values (1004, 'Clean', 'Rod BR 232, km 10 - Gravatá', '81995373545', 'clean@sac.com.br');
 
 
 -- inserções na relação Paciente date: YYYY:MM:DD
