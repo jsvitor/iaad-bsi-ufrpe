@@ -38,3 +38,32 @@ from ClinicaMedico join Medico using(CodMed) join Clinica using(CodCli)
 where ClinicaMedico.DataIngresso >= '2016-01-01';
 
 
+
+/* 
+ * C) Especifique o comando SQL que retorne os códigos e nomes dos médicos que 
+ * não atuam em nenhuma das clínicas cadastradas no banco de dados. Apresentar a
+ * consulta de três formas:
+ * (I) left join,
+ * (II) not in,
+ * (III) not exists.
+ * 
+ * Apresente também a tabela resultante.
+ *
+ */
+
+ -- (I) left join, pego todos os valores distintos de Medico a partir (from) da junção de medico com ClinicaMedico
+ select Medico.CodMed, Medico.NomeMed
+ from Medico left outer join ClinicaMedico using(CodMed)
+ where ClinicaMedico.CodMed is null;
+ 
+ -- (II) not in,
+select distinct Medico.CodMed, Medico.NomeMed
+from Medico, ClinicaMedico
+where Medico.CodMed not in (select CodMed from ClinicaMedico);
+
+-- (III) not exists
+select Medico.CodMed, Medico.NomeMed
+from Medico
+where not exists (select CodMed from ClinicaMedico where ClinicaMedico.CodMed = Medico.CodMed);
+
+
