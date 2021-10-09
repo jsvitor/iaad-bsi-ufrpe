@@ -71,6 +71,9 @@ Repositório criado para armazenar o conteúdo das atividades práticas da disci
 
   💬 DÚVIDAS?
   Em caso de dúvidas e/ou sugestões relacionados à disciplina, encontra-se disponível nosso canal de comunicação assíncrona no DISCORD: https://discord.gg/wsYrGsqmy8
+  
+  Conteúdo da Atividade Avaliativa:
+  * Junções, Consultas Aninhadas, Funções de Agregação, Agrupamento, Triggers, Stored Procedures, Views.
 
   Bons estudos!
   
