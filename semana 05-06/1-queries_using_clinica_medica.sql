@@ -67,3 +67,14 @@ from Medico
 where not exists (select CodMed from ClinicaMedico where ClinicaMedico.CodMed = Medico.CodMed);
 
 
+
+/*
+ * D) Especifique o comando SQL que retorne os nomes de todas as clínicas médicas
+ * e a quantidade de médicos(as) de cada clínica.
+ *
+ */
+select ClinicaMedico.CodCli, count(ClinicaMedico.CodMed)
+from Medico right join ClinicaMedico using(CodMed)
+group by ClinicaMedico;
+
+
