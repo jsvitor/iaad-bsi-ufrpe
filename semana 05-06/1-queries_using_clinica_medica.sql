@@ -27,3 +27,14 @@ from Medico join Especialidade using(CodEspec);
 select Medico.NomeMed, Especialidade.NomeEspec
 from Medico natural join Especialidade;
 
+/* 
+ * B) Especifique o comando SQL que retorne os nomes de todas as clínicas médicas
+ * e os respectivos nomes dos(as) médicos(as) vinculados(as) às clínicas.
+ * Considere apenas os(as) médicos cuja data de ingresso seja superior a 2015.
+ *
+ */
+select Medico.NomeMed, Clinica.NomeCli
+from ClinicaMedico join Medico using(CodMed) join Clinica using(CodCli)
+where ClinicaMedico.DataIngresso >= '2016-01-01';
+
+
