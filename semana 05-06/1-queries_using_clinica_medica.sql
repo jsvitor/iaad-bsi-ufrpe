@@ -116,3 +116,32 @@ where ClinicaMedico.CodMed is null;
 select Especialidade.CodEspec, Especialidade.NomeEspec, Medico.CodMed, Medico.NomeMed, ClinicaMedico.CodCli, Clinica.NomeCli
 from Especialidade left join Medico using(CodEspec)
 left join ClinicaMedico using(CodMed) left join Clinica using (CodCli);
+
+
+
+/*
+ * H) Explique o retorno da consulta SQL abaixo:
+ */
+/*  
+SELECT Medico.CodMed,
+FROM Medico
+WHERE
+  NOT EXISTS (
+    SELECT * FROM Clinica
+    WHERE NOT EXISTS (
+       SELECT * FROM ClinicaMedico
+       WHERE Clinica.CodCli = ClinicaMedico.CodCli AND
+                    Medico.CodMed = ClinicaMedico.CodMed
+                     )
+              )
+*/
+
+/*  RESPOSTA:
+ *  Caso ela fosse executada, haveria um erro de sintaxe, pois na primeira linha há 
+ *  uma vírgula após a especificação do atributo Medico.CodMed.
+ *  Também há um erro de sintaxe no último select aninhado:
+ *  a relação Clinica não foi definida após a cláusula FROM, mas é chamada na condição do WHERE.
+ *  Contudo, a consulta não será executada, pois não foi colocado o ponto e vírgula no final.
+ *
+ */
+
