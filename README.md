@@ -1,6 +1,6 @@
 # 📑 Introdução ao Armazenamento e Análise de Dados (IAAD)
 
-Repositório criado para armazenar o conteúdo das atividades práticas da disciplina de IAAD, ofertada pelo curso de Bacharelado em Sistemas de Informação da UFRPE.
+Repositório criado para versionar o conteúdo das atividades práticas da disciplina de IAAD, ofertada pelo curso de Bacharelado em Sistemas de Informação da UFRPE.
 
 ## Semana 01 à 02
 <details>
