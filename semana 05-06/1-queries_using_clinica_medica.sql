@@ -92,3 +92,13 @@ group by Especialidade.CodEspec
 having count(Medico.CodMed) > 10;
 
 
+
+/*
+ *  F) Especifique o comando SQL que retorne os nomes das clínicas médicas que 
+ *  estão sem médicos cadastrados.
+ *
+ */
+select Clinica.NomeCli as "Clinica Sem Médico"
+from Clinica left join ClinicaMedico using(CodCli)
+where ClinicaMedico.CodMed is null;
+
