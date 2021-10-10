@@ -145,3 +145,20 @@ WHERE
  *
  */
 
+
+
+/*
+ *  I) Elabore uma consulta (escolha livre) que represente a operação “Full Outer Join”
+ *  (Lembrando que o MySQL não implementa diretamente esta operação, sendo necessário
+ *  usar a operação de união). Explique o significado da consulta.
+ * Seleciona nome do médico e da clinica, tendo como objetivo saber quais médicos estão Clinica
+ * e quais não estão. Assim como, saber quais clinicas não possuem médicos.
+ */
+
+select Medico.NomeMed as NomeMed, RCN.NomeCli
+from Medico left join (select * from ClinicaMedico left join Clinica using(CodCli)) as RCN  using(CodMed)
+union all
+select Medico.NomeMed, RCNX.NomeCli
+from Medico right join (select * from ClinicaMedico right join Clinica using(CodCli)) as RCNX using(CodMed)
+where Medico.CodMed is null;
+
