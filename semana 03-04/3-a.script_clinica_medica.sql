@@ -82,6 +82,7 @@ insert into Especialidade(CodEspec, NomeEspec, Descricao) values (0002, 'Pediatr
 insert into Especialidade values (0003, 'Odontologista', 'Cuidados bucais');
 insert into Especialidade values (0033, 'dermatologista', 'Especializado em pele e cabelos');
 insert into Especialidade values (0077, 'Psicologista', 'Terapia comportamental');
+insert into Especialidade values (0066, 'Psiquiatria', 'Tratamento de problemas mentais');
 
 
 -- inserções na relação Clínica
