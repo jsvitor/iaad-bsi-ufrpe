@@ -102,3 +102,17 @@ select Clinica.NomeCli as "Clinica Sem Médico"
 from Clinica left join ClinicaMedico using(CodCli)
 where ClinicaMedico.CodMed is null;
 
+
+
+/* 
+ *  G) Especifique o comando SQL que retorne:
+ *  (I) Código e nome de cada especialidade;
+ *  (II) Código e nome de cada médico que atua nesta especialidade 
+ *       (Atenção: se a especialidade não tiver médicos, deve-se aparecer null);
+ *  (III) Código e nome de cada clínica em que atua o médico
+ *       (Atenção: se o médico não atua em nenhuma clínica, deve-se aparecer null).
+ *
+ */
+select Especialidade.CodEspec, Especialidade.NomeEspec, Medico.CodMed, Medico.NomeMed, ClinicaMedico.CodCli, Clinica.NomeCli
+from Especialidade left join Medico using(CodEspec)
+left join ClinicaMedico using(CodMed) left join Clinica using (CodCli);
