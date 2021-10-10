@@ -135,6 +135,18 @@ WHERE
                      )
               )
 */
+-- deveria retornar CodMed para os quais não existe Clinica associado.
+SELECT Medico.CodMed -- retorna vazio, pois o not exists é falso. Mas poderia retornar o CodMed de todos os médicos caso fosse verdadeira.
+FROM Medico
+WHERE
+  NOT EXISTS ( -- é verdadeiro quando a subconsulta retorna nenhum valor, nesse caso ela retorna a clinica Clean
+    SELECT * FROM Clinica -- seleciona apenas as tuplas de Clinica que não estão na subconsulta, ou seja, Clinica que não está em ClinicaMedico
+    WHERE NOT EXISTS (  -- 2207 não existe nessa seleção e Clinica Clean tbm não existe
+       SELECT * FROM ClinicaMedico -- retorna todas as tuplas de ClinicaMedico que possue Clinica e Medico.
+       WHERE Clinica.CodCli = ClinicaMedico.CodCli AND
+                    Medico.CodMed = ClinicaMedico.CodMed -- não exista clinica associada ao médico e medico associado a clinica
+                     )
+              );
 
 /*  RESPOSTA:
  *  Caso ela fosse executada, haveria um erro de sintaxe, pois na primeira linha há 
@@ -162,3 +174,28 @@ select Medico.NomeMed, RCNX.NomeCli
 from Medico right join (select * from ClinicaMedico right join Clinica using(CodCli)) as RCNX using(CodMed)
 where Medico.CodMed is null;
 
+/*
+ *  J) Especifique um gatilho (Trigger) em SQL para o BD Clínicas Médicas (escolha livre).
+ *  Explique o objetivo de seu gatilho e apresente um exemplo do gatilho sendo ativado/executado pelo SGBD.
+ * 
+ */
+/* 
+CREATE TRIGGER nome momento evento
+ON tabela
+FOR EACH ROW
+BEGIN
+  -- corpo do código
+END
+*/
+
+delimiter $
+create trigger update_ClinicaMedicoC before update
+on ClinicaMedico
+for each row
+begin
+  -- se durante um update não for fornecido uma carga horária, será adicionado o valor 20 horas
+  if (NEW.CargaHorariaSemanal is null) then
+    set NEW.CargaHorariaSemanal = 22;
+  end if;
+end$
+delimiter
