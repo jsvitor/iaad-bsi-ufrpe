@@ -86,9 +86,9 @@ Bons estudos!
   ### Objetivos das semanas 5 e 6:  
    - [x] Compreender os diferentes tipos de junção: Inner Join, left/right Join, full outer join, cross join etc.
    - [x] Entender como especificar consultas SQL aninhadas.
-   - [ ] Compreender as principais funções de agregação e agrupamento (Group By e Having).
-   - [ ] Saber especificar ações como gatilhos (Trigger) e  procedimentos armazenados (Stored Procedures).
-   - [ ] Compreender o conceito de visões (View) e como elas podem ser implementadas pelo SGBD.
+   - [x] Compreender as principais funções de agregação e agrupamento (Group By e Having).
+   - [x] Saber especificar ações como gatilhos (Trigger) e  procedimentos armazenados (Stored Procedures).
+   - [x] Compreender o conceito de visões (View) e como elas podem ser implementadas pelo SGBD.
    - [ ] Realizar a atividade avaliativa.
   
   #### MATERIAIS DIDÁTICOS DE APOIO AOS ESTUDOS:
