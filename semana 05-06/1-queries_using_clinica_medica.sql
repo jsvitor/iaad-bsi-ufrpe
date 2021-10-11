@@ -178,24 +178,21 @@ where Medico.CodMed is null;
  *  J) Especifique um gatilho (Trigger) em SQL para o BD Clínicas Médicas (escolha livre).
  *  Explique o objetivo de seu gatilho e apresente um exemplo do gatilho sendo ativado/executado pelo SGBD.
  * 
+ *  OBJETIVO DO GATILHO:
+ *  Toda vez que uma atualização na relação ClinicaMedico for feita e o valor de CargaHorariaSemanal não for informado,
+ *  o valor será inserido como 22;
  */
-/* 
-CREATE TRIGGER nome momento evento
-ON tabela
-FOR EACH ROW
-BEGIN
-  -- corpo do código
-END
-*/
+delimiter //
 
-delimiter $
-create trigger update_ClinicaMedicoC before update
+create trigger update_ClinicaMedico before update
 on ClinicaMedico
 for each row
-begin
-  -- se durante um update não for fornecido uma carga horária, será adicionado o valor 20 horas
-  if (NEW.CargaHorariaSemanal is null) then
-    set NEW.CargaHorariaSemanal = 22;
-  end if;
-end$
-delimiter
+  begin
+    -- se durante um update não for fornecido uma carga horária, será adicionado o valor 20 horas
+    if (NEW.CargaHorariaSemanal = OLD.CargaHorariaSemanal) then
+      set NEW.CargaHorariaSemanal = 22;
+    end if;
+
+  end //
+
+delimiter ;
