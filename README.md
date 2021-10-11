@@ -70,6 +70,14 @@ Bons estudos!
 
 </details>
 
+<details>
+  <summary>Container Docker com MySQL</summary>
+  
+  <code>
+    $ docker exec -it mysql-local-db mysql -uroot -pQaz123
+  </code>
+
+</details>
 
 ## Semana 05 à 06
 <details>
