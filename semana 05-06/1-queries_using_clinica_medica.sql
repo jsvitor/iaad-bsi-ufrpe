@@ -1,6 +1,30 @@
 use clinica_medica_jsvitor;
 
 /* 
+ *  QUESTÃO 1 (6,0 PONTOS)
+ *
+ *  Considere o esquema do banco de dados relacional “Clínicas Médicas” indicado abaixo:
+ * 
+ *  tabela com informações de clínicas médicas
+ *  -- Clinica (CodCli, NomeCli, Endereco, Telefone, E-mail)
+ *  tabela com informações de médicos
+ *  -- Medico (CodMed, NomeMed, Genero, Telefone, E-mail, CodEspec)
+ *  -- CodEspec referencia Especialidade
+ *  tabela com informações de pacientes
+ *  -- Paciente (CpfPaciente, NomePac, DataNascimento, Genero, Telefone, E-mail)
+ *  tabela que relaciona médicos e clínicas
+ *  -- ClinicaMedico (CodCli, CodMed, DataIngresso, CargaHorariaSemanal)
+ *  -- CodCli referencia Clinica
+ *  -- CodMed referencia Medico
+ *  tabela com informações da agenda de consultas dos médicos
+ *  -- AgendaConsulta (CodCli, CodMed, CpfPaciente, Data/Hora)
+ *  -- (CodCli, CodMed) referencia ClinicaMedico
+ *  -- CpfPaciente referencia Paciente
+ *  tabela com informações de especialidades médicas
+ *  -- Especialidade (CodEspec, NomeEspec, Descricao)
+ */
+
+/* 
  * A) Especifique o comando SQL que retorne os nomes dos(as) médicos(as) e os
  * nomes das respectivas especialidades em que eles(as) atuam. Apresentar a 
  * consulta de três formas:
@@ -216,3 +240,4 @@ DELIMITER ;
 
 call Quant_de_Medicos_Nao_Associados_a_Clinica(@quant);
 select @quant;
+
