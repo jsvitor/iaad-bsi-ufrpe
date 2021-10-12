@@ -182,11 +182,12 @@ where Medico.CodMed is null;
  *  Toda vez que uma atualização na relação ClinicaMedico for feita e o valor de CargaHorariaSemanal não for informado,
  *  o valor será inserido como 22;
  */
-delimiter //
+delimiter // -- por padrão o MySQL delimita instruções por meio do ponto e vírgula(;), mas dentro da definição do gatilho
+-- iremos delimitar com barras duplas (//). Sendo que ao final, devemos retornar ao valor padrão (delimiter ;)
 
 create trigger update_ClinicaMedico before update
 on ClinicaMedico
-for each row
+for each row -- para cada linha que for alterada, execute essas instruções:
   begin
     -- se durante um update não for fornecido uma carga horária, será adicionado o valor 20 horas
     if (NEW.CargaHorariaSemanal = OLD.CargaHorariaSemanal) then
@@ -196,3 +197,22 @@ for each row
   end //
 
 delimiter ;
+
+
+/*
+ *  K) Especifique um procedimento armazenado (Stored Procedure) em SQL para o BD Clínicas Médicas (escolha livre).
+ *  Explique o objetivo de seu procedimento armazenado e apresente um exemplo dele sendo ativado/executado pelo SGBD.
+ *  
+ *  RESPOSTA:
+ *  Tem como objetivo contar a quantidade de médicos que não estão associados a ClinicaMedico;
+ */
+DELIMITER $$
+CREATE PROCEDURE Quant_de_Medicos_Nao_Associados_a_Clinica (out total int)
+BEGIN
+  /*CORPO DO PROCEDIMENTO*/
+  select count(CodMed) into total from Medico left join ClinicaMedico using(CodMed) where CodCli is null;
+END $$
+DELIMITER ;
+
+call Quant_de_Medicos_Nao_Associados_a_Clinica(@quant);
+select @quant;
