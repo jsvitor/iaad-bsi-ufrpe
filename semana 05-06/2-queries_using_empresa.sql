@@ -34,3 +34,14 @@ WHERE FUNCIONARIO.Dnr IN (
  AND
   ( SELECT MAX(Salario)
     FROM FUNCIONARIO)-1;
+
+
+/*
+ *  C) Para cada departamento cujo salário médio do funcionário seja maior do que R$ 32.000,00,
+ *  retorne o nome do departamento e o número de funcionários que trabalham no departamento.
+ * 
+ */
+SELECT D.Dnome, Count(F.Dnr)
+FROM DEPARTAMENTO as D join FUNCIONARIO as F on D.Dnumero = F.Dnr
+WHERE (SELECT AVG(Salario) FROM FUNCIONARIO WHERE Dnr = D.Dnumero) > 32000
+GROUP BY D.Dnumero;
