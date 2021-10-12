@@ -18,3 +18,19 @@ WHERE FUNCIONARIO.Dnr IN (
   SELECT Dnr
   FROM FUNCIONARIO
   WHERE Salario = 38000);
+
+
+/*
+ *  B) Usando consulta aninhada, recupere os nomes dos funcionários que ganham 
+ *  pelo menos R$ 16.000,00 a menos que o funcionário que recebe mais na empresa.
+ *
+ */
+ SELECT Pnome, Unome
+ FROM FUNCIONARIO
+ WHERE Salario
+ BETWEEN
+  (SELECT MAX(Salario)-16000
+   FROM FUNCIONARIO)
+ AND
+  ( SELECT MAX(Salario)
+    FROM FUNCIONARIO)-1;
