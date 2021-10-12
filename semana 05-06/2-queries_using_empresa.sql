@@ -45,3 +45,14 @@ SELECT D.Dnome, Count(F.Dnr)
 FROM DEPARTAMENTO as D join FUNCIONARIO as F on D.Dnumero = F.Dnr
 WHERE (SELECT AVG(Salario) FROM FUNCIONARIO WHERE Dnr = D.Dnumero) > 32000
 GROUP BY D.Dnumero;
+
+
+/*
+ *  D) Obter a quantidade de funcionários do sexo feminino, que ganham menos de
+ *  R$ 30.000, em cada departamento.
+ *
+ */
+SELECT Dnr, COUNT(Cpf) as 'qnt_de_mulheres'
+FROM FUNCIONARIO
+WHERE Sexo = 'F' AND Salario < 30000
+GROUP BY Dnr;
