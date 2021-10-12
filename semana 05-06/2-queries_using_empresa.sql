@@ -56,3 +56,31 @@ SELECT Dnr, COUNT(Cpf) as 'qnt_de_mulheres'
 FROM FUNCIONARIO
 WHERE Sexo = 'F' AND Salario < 30000
 GROUP BY Dnr;
+
+
+/*
+ *  E) Especifique uma view em SQL que obtenha para cada departamento, o número 
+ *  do departamento, nome do departamento, nome do gerente, quantidade de funcionários,
+ *  total de salários, menor salário, maior salário e média de salários.
+ *
+ */
+CREATE VIEW V_DF_DEPARTAMENTO AS
+  SELECT * FROM
+  (
+    SELECT 
+        D.Dnumero, D.Dnome,
+        CONCAT(F.Pnome, ' ', F.Unome) AS 'Nome do Gerente'
+    FROM
+        DEPARTAMENTO D JOIN FUNCIONARIO F ON D.Dnumero = F.Dnr
+    WHERE Cpf_gerente = Cpf
+  ) AS R1
+  JOIN
+  (
+    SELECT 
+        F.Dnr, COUNT(F.Dnr) AS 'QUANT_FUNCIONARIOS',
+        SUM(F.Salario), MIN(F.Salario), MAX(F.Salario), AVG(F.Salario)
+    FROM
+        FUNCIONARIO F
+    GROUP BY Dnr
+  ) AS R2
+  ON R1.Dnumero = R2.Dnr;
