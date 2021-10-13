@@ -47,6 +47,7 @@ WHERE (SELECT AVG(Salario) FROM FUNCIONARIO WHERE Dnr = D.Dnumero) > 32000
 GROUP BY D.Dnumero;
 
 
+
 /*
  *  D) Obter a quantidade de funcionários do sexo feminino, que ganham menos de
  *  R$ 30.000, em cada departamento.
@@ -56,6 +57,7 @@ SELECT Dnr, COUNT(Cpf) as 'qnt_de_mulheres'
 FROM FUNCIONARIO
 WHERE Sexo = 'F' AND Salario < 30000
 GROUP BY Dnr;
+
 
 
 /*
@@ -84,3 +86,19 @@ CREATE VIEW V_DF_DEPARTAMENTO AS
     GROUP BY Dnr
   ) AS R2
   ON R1.Dnumero = R2.Dnr;
+
+
+
+/*
+ *  F) Especifique uma view em SQL que obtenha o nome do funcionário, nome do supervisor
+ *  e salário de cada funcionário que trabalha nos departamentos ‘Pesquisa’ e ‘Administração’.
+ *
+ */
+CREATE VIEW V_DEM_PSQ_ADM(Funcionario, Salario, Supervisor)
+AS SELECT CONCAT(F.Pnome, ' ', F.Unome) as Funcionario, F.Salario, CONCAT(S.Pnome, ' ', S.Unome) AS Supervisor
+   FROM FUNCIONARIO F
+   JOIN FUNCIONARIO S ON F.Cpf_supervisor = S.Cpf
+   JOIN DEPARTAMENTO D ON F.Dnr = D.Dnumero
+   WHERE D.Dnome IN ("Pesquisa", "Administracao");
+
+
