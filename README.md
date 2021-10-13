@@ -71,7 +71,7 @@ Bons estudos!
 </details>
 
 <details>
-  <summary>Container Docker com MySQL</summary>
+  <summary>Configuração do ambiente MySQL em container Docker</summary>
   
   <code>
     $ docker exec -it mysql-local-db mysql -uroot -pQaz123
