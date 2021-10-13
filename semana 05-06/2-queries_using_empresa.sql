@@ -102,3 +102,18 @@ AS SELECT CONCAT(F.Pnome, ' ', F.Unome) as Funcionario, F.Salario, CONCAT(S.Pnom
    WHERE D.Dnome IN ("Pesquisa", "Administracao");
 
 
+
+/*
+ *  G) Especifique uma view em SQL que obtenha para cada projeto, o nome do projeto,
+ *  nome do departamento que o controla, e média de horas trabalhadas por semana por
+ *  seus funcionários. Considere que apenas os projetos que possuem três ou mais
+ *  funcionários devem aparecer no resultado da visão.
+ *
+ */
+CREATE VIEW V_PROJETO(Projeto, Departamento, Qnt_funcionarios, MEDIA_DE_HORAS_POR_SEMANA)
+AS SELECT P.Projnome, D.Dnome, COUNT(T.Pnr), AVG(T.Horas)
+   FROM PROJETO P
+   JOIN DEPARTAMENTO D ON D.Dnumero = P.Dnum
+   JOIN TRABALHA_EM AS T ON P.Projnumero = T.Pnr
+   GROUP BY T.Pnr
+   HAVING COUNT(T.Pnr) >= 3;
