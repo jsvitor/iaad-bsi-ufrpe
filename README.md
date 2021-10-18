@@ -206,10 +206,11 @@ Bons estudos!
 **Resumo do Conteúdo da Atividade Avaliativa**:
 
 * ### Álgebra Relacional
+
 |Síbolo| Operação |	Sintaxe	| Tipo
 |--|--|--|--|
-| **`σ`** | Seleção / restrição | **σ** condição ( Relação ) | Primitiva
-| **`π`** | Projeção | **π** expressões ( Relação ) | Primitiva
+| **`σ`** | Seleção / restrição | **σ** <sub>condição</sub> ( Relação ) | Primitiva
+| **`π`** | Projeção | **π** <sub>expressões</sub> ( Relação ) | Primitiva
 | **`⋃`** | União | Relação1 ⋃ Relação2 | Primitiva
 | **`⋂`** | Intersecção | Relação1 **⋂** Relação2 | Adicional
 | **`–`** | Diferença de conjuntos | Relação1 **–** Relação2 | Primitiva
@@ -219,7 +220,30 @@ Bons estudos!
 | **`ρ`** | Renomeação | **ρ** nome( Relação ) | Primitiva
 | **`←`** | Atribuição | variável **←** Relação | Adicional
 
+#### Operações Unárias
+* Seleção
+	<code></code>
+* Projeção
+* Renome
+	<code>
+		ρ TEMP (σ<sub>DNO = 5</sub>(EMPREGADO))
+
+		ρ R (π<sub>PNOME, UNOME, SALARIO</sub>(TEMP))
+		ρ (PRIMEIRONOME, ULTIMONOME, SALARIO) (R)
+	</code>
+
+#### Operações da Teoria dos Conjuntos
+* União
+* Intersecção
+* Diferença
+
+#### Operações Binárias
+* Produto
+* Junção
+
+	
 Bons estudos!
+
 
   
 
