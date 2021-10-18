@@ -213,8 +213,8 @@ Bons estudos!
 | **`⋃`** | União | Relação1 ⋃ Relação2 | Primitiva
 | **`⋂`** | Intersecção | Relação1 **⋂** Relação2 | Adicional
 | **`–`** | Diferença de conjuntos | Relação1 **–** Relação2 | Primitiva
-| **`×`** | Produto cartesiano | Relação1 **×** Relação2 | Primitiva
-| **`|×|`** | Junção | Relação1 **`|×|`** Relação2 | Adicional
+| **`x`** | Produto cartesiano | Relação1 **x** Relação2 | Primitiva
+| **<code>&#124;×&#124;</code>** | Junção | Relação1 **<code>&#124;×&#124;</code>** Relação2 | Adicional
 | **`÷`** | Divisão | Relação1 **÷** Relação2 | Adicional
 | **`ρ`** | Renomeação | **ρ** nome( Relação ) | Primitiva
 | **`←`** | Atribuição | variável **←** Relação | Adicional
