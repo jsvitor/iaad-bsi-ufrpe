@@ -12,20 +12,40 @@
 > * Banco de Dados NoSQL;
 > * Database as a Service (DaaS).
 
+
 <details>
 	<summary>Ementa</summary>
-III – OBJETIVOS DA DISCIPLINA
+
+### III – OBJETIVOS DA DISCIPLINA
 
 * Proporcionar aos estudantes conhecimentos teóricos e práticos acerca das principais características, arquitetura e necessidades de uso de SGBDs;
 * Compreender as especificidades dos BDs relacionais e diferenciá-los de outros modelos de dados;
 * Elaborar e executar comandos/consultas em Structured Query Language - SQL;
 * Implementar bancos de dados eficientes, utilizando a abordagem relacional (e não-relacional), considerando as restrições de integridade, privacidade e segurança das informações.
 
-IV – CONTEÚDO PROGRAMÁTICO
+### IV – CONTEÚDO PROGRAMÁTICO
 1. Armazenamento de dados semiestruturados, Modelo Relacional e Normalização;
 2. SGBD: Consultas, Transações, Concorrência, Desempenho, Otimização e Segurança;
 3. Formalização: Modelo Conceitual e Álgebra Relacional;
 4. Tópicos Avançados: NoSQL, Banco de Dados Distribuídos e Database as a Service (DaaS).	
+
+### IX – BIBLIOGRAFIA
+> #### BÁSICA:
+>
+> 1. ELMASRI, Ramez; NAVATHE, Shamkant B. Sistemas de banco de dados. 7a ed. São Paulo: Pearson, 2018, 1152 p. ISBN 978-8543025001.
+> 2. SILBERSCHATZ, Abraham; KORTH, Henry F; SUDARSHAN, S. Sistema de banco de dados. 6a ed. GEN LTC, 2012. 904 p. ISBN 978-8535245356.
+> 3. DATE, C. J. Introdução a sistemas de bancos de dados. Rio de Janeiro: Elsevier, 2003. 865 p. ISBN 9788535212730.
+
+> #### COMPLEMENTAR:
+>
+> 1. RAMAKRISHNAN, Raghu; GEHRKE, Johannes. Sistemas de gerenciamento de banco de dados. 3a ed.
+São Paulo: McGraw-Hill, 2008. 905 p. ISBN: 9788577260270.
+> 2. TEOREY, Toby; LIGHTSTONE, Sam; NADEAU, Tom; JAGADISH, H. V. Projeto e modelagem de
+bancos de dados. 5a Ed. Rio de Janeiro: Elsevier, 2014. 328 p. ISBN 9788535264456.
+> 3. VAISH, Gaurav. Getting started with NoSQL. Packt Publishing Ltd, 2013.
+> 4. LOSHIN, David. Big data analytics: from strategic planning to enterprise integration with tools, techniques, NoSQL, and graph. Elsevier, 2013.
+> 5. MACHADO, F. N. R. Banco de dados: projeto e implementação. 4. ed. São Paulo: Érica, 2020. 376 p. ISBN 978-8536532684.
+
 
 </details>  
 
