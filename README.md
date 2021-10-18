@@ -112,3 +112,38 @@ Bons estudos!
   
 
 </details>
+
+## Semana 07 à 08
+<details>
+  <summary>Curadoria da Profa. Roberta Macêdo 🐱‍🚀</summary>
+  
+  ### Objetivos das semanas 7 e 8:  
+  - [ ] Obter uma visão geral sobre Modelagem de Dados, usando o modelo Entidade-Relacionamento Estendido (EER), por meio da Engenharia Reversa.
+  - [ ] Aprender a especificar consultas da Álgebra Relacional usando as operações unárias, binárias e com base na teoria dos conjuntos.
+  - [ ] Realizar a atividade avaliativa.
+
+  
+  #### MATERIAIS DIDÁTICOS DE APOIO AOS ESTUDOS:
+
+**Videoaula sobre Engenharia Reversa na prática (Google Meet)**:
+* 🎬 http://bit.ly/engenharia_reversa (*reutilizada do período anterior*)
+
+**Videoaula sobre Álgebra Relacional e exercícios de fixação (Google Meet)**:
+* 🎬 http://bit.ly/algebrarelacional (*reutilizada do período anterior*)
+
+  
+**Videoaulas da Profa. Sarajane Peres - UNIVESP**
+* 🎬 Parte 1: https://youtu.be/jhD9WYNWorA
+* 🎬 Parte 2: https://youtu.be/mjjjwrh6_6Q
+
+    
+  📖 Leitura do Capítulo 06 (páginas 96 a 129) do livro 'Sistemas de Banco de Dados', 6ª Edição, de Ramez Elmasri e Shamkant Navathe.
+
+  
+  Conteúdo da Atividade Avaliativa:
+  * Álgebra Relacional e Engenharia Reversa
+
+  Bons estudos!
+  
+
+</details>
