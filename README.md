@@ -1,6 +1,33 @@
 # 📑 Introdução ao Armazenamento e Análise de Dados (IAAD)
 
-Repositório criado para versionar o conteúdo das atividades práticas da disciplina de IAAD, ofertada pelo curso de Bacharelado em Sistemas de Informação da UFRPE.
+> ### Sinopse do Conteúdo
+> * Sistemas de Gerenciamento de Bancos de Dados (SGBD);
+> * Modelo Conceitual;
+> * Modelo Relacional;
+> * Normalização;
+> * Álgebra Relacional;
+> * Processamento de transações;
+> * Execução e Otimização de Consultas;
+> * Dados semiestruturados;
+> * Banco de Dados NoSQL;
+> * Database as a Service (DaaS).
+
+<details>
+	<summary>Ementa</summary>
+III – OBJETIVOS DA DISCIPLINA
+
+* Proporcionar aos estudantes conhecimentos teóricos e práticos acerca das principais características, arquitetura e necessidades de uso de SGBDs;
+* Compreender as especificidades dos BDs relacionais e diferenciá-los de outros modelos de dados;
+* Elaborar e executar comandos/consultas em Structured Query Language - SQL;
+* Implementar bancos de dados eficientes, utilizando a abordagem relacional (e não-relacional), considerando as restrições de integridade, privacidade e segurança das informações.
+
+IV – CONTEÚDO PROGRAMÁTICO
+1. Armazenamento de dados semiestruturados, Modelo Relacional e Normalização;
+2. SGBD: Consultas, Transações, Concorrência, Desempenho, Otimização e Segurança;
+3. Formalização: Modelo Conceitual e Álgebra Relacional;
+4. Tópicos Avançados: NoSQL, Banco de Dados Distribuídos e Database as a Service (DaaS).	
+
+</details>  
 
 ## Semana 01 à 02
 <details>
