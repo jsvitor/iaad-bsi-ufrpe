@@ -160,37 +160,70 @@ Bons estudos!
 
 </details>
 
+
 ## Semana 07 à 08
+
 <details>
-  <summary>Curadoria da Profa. Roberta Macêdo 🐱‍🚀</summary>
-  
-  ### Objetivos das semanas 7 e 8:  
-  - [ ] Obter uma visão geral sobre Modelagem de Dados, usando o modelo Entidade-Relacionamento Estendido (EER), por meio da Engenharia Reversa.
-  - [ ] Aprender a especificar consultas da Álgebra Relacional usando as operações unárias, binárias e com base na teoria dos conjuntos.
-  - [ ] Realizar a atividade avaliativa.
+
+<summary>Curadoria da Profa. Roberta Macêdo 🐱‍🚀</summary>
+
+### Objetivos:
+
+- [ ] Obter uma visão geral sobre Modelagem de Dados, usando o modelo Entidade-Relacionamento Estendido (EER), por meio da Engenharia Reversa.
+
+- [ ] Aprender a especificar consultas da Álgebra Relacional usando as operações unárias, binárias e com base na teoria dos conjuntos.
+
+- [ ] Realizar a atividade avaliativa.
 
   
-  #### MATERIAIS DIDÁTICOS DE APOIO AOS ESTUDOS:
+
+#### MATERIAIS DIDÁTICOS DE APOIO AOS ESTUDOS:
+
+  
 
 **Videoaula sobre Engenharia Reversa na prática (Google Meet)**:
-* 🎬 http://bit.ly/engenharia_reversa (*reutilizada do período anterior*)
+
+- [x] 🎬 http://bit.ly/engenharia_reversa (*reutilizada do período anterior*)
+
+  
 
 **Videoaula sobre Álgebra Relacional e exercícios de fixação (Google Meet)**:
-* 🎬 http://bit.ly/algebrarelacional (*reutilizada do período anterior*)
+
+- [x] 🎬 http://bit.ly/algebrarelacional (*reutilizada do período anterior*)
 
   
+
 **Videoaulas da Profa. Sarajane Peres - UNIVESP**
+
 * 🎬 Parte 1: https://youtu.be/jhD9WYNWorA
+
 * 🎬 Parte 2: https://youtu.be/mjjjwrh6_6Q
 
-    
-  📖 Leitura do Capítulo 06 (páginas 96 a 129) do livro 'Sistemas de Banco de Dados', 6ª Edição, de Ramez Elmasri e Shamkant Navathe.
+  
+
+- [ ] 📖 Leitura do Capítulo 06 (páginas 96 a 129) do livro 'Sistemas de Banco de Dados', 6ª Edição, de Ramez Elmasri e Shamkant Navathe.
 
   
-  Conteúdo da Atividade Avaliativa:
-  * Álgebra Relacional e Engenharia Reversa
 
-  Bons estudos!
+**Resumo do Conteúdo da Atividade Avaliativa**:
+
+* ### Álgebra Relacional
+|Síbolo| Operação |	Sintaxe	| Tipo
+|--|--|--|--|
+| **`σ`** | Seleção / restrição | **σ** condição ( Relação ) | Primitiva
+| **`π`** | Projeção | **π** expressões ( Relação ) | Primitiva
+| **`⋃`** | União | Relação1 ⋃ Relação2 | Primitiva
+| **`⋂`** | Intersecção | Relação1 **⋂** Relação2 | Adicional
+| **`–`** | Diferença de conjuntos | Relação1 **–** Relação2 | Primitiva
+| **`×`** | Produto cartesiano | Relação1 **×** Relação2 | Primitiva
+| **`|×|`** | Junção | Relação1 **`|×|`** Relação2 | Adicional
+| **`÷`** | Divisão | Relação1 **÷** Relação2 | Adicional
+| **`ρ`** | Renomeação | **ρ** nome( Relação ) | Primitiva
+| **`←`** | Atribuição | variável **←** Relação | Adicional
+
+Bons estudos!
+
   
 
 </details>
+
