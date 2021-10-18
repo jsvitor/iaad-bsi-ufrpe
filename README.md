@@ -71,7 +71,7 @@ Bons estudos!
 </details>
 
 <details>
-  <summary>Container Docker com MySQL</summary>
+  <summary>Configuração do ambiente MySQL em container Docker</summary>
   
   <code>
     $ docker exec -it mysql-local-db mysql -uroot -pQaz123
@@ -89,23 +89,23 @@ Bons estudos!
    - [x] Compreender as principais funções de agregação e agrupamento (Group By e Having).
    - [x] Saber especificar ações como gatilhos (Trigger) e  procedimentos armazenados (Stored Procedures).
    - [x] Compreender o conceito de visões (View) e como elas podem ser implementadas pelo SGBD.
-   - [ ] Realizar a atividade avaliativa.
+   - [x] Realizar a atividade avaliativa.
   
   #### MATERIAIS DIDÁTICOS DE APOIO AOS ESTUDOS:
 
   **Videoaula sobre os tipos de junção (reutilizada do período anterior):**
-  * 🎬 https://www.loom.com/share/61584a42eee442b598b303120852beca
+  - [x] 🎬 https://www.loom.com/share/61584a42eee442b598b303120852beca
   * 📄 Script Marcas e Carros (arquivo anexo).
   
   **Videoaulas da Profa. Sarajane Peres - UNIVESP**
-  * 🎬 https://youtu.be/XnS8XCXPkuk (A partir de 19min15s)
-  * 🎬 https://youtu.be/oFti3s_Lc_oz
-  * 🎬 https://youtu.be/qxoBxi7LpXk
+  - [x] 🎬 https://youtu.be/XnS8XCXPkuk (A partir de 19min15s)
+  - [x] 🎬 https://youtu.be/oFti3s_Lc_oz
+  - [x] 🎬 https://youtu.be/qxoBxi7LpXk
     
   📖 Leitura do Capítulo 5 (páginas 76 a 95) do livro 'Sistemas de Banco de Dados', 6ª Edição, de Ramez Elmasri e Shamkant Navathe.
 
   
-  Conteúdo da Atividade Avaliativa:
+  ##### Conteúdo da Atividade Avaliativa:
   * Junções, Consultas Aninhadas, Funções de Agregação, Agrupamento, Triggers, Stored Procedures, Views.
 
   Bons estudos!
