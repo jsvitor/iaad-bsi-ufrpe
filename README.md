@@ -184,10 +184,10 @@ Bons estudos!
 * 🎬 Parte 2: https://youtu.be/mjjjwrh6_6Q
 
     
-  📖 Leitura do Capítulo 06 (páginas 96 a 129) do livro 'Sistemas de Banco de Dados', 6ª Edição, de Ramez Elmasri e Shamkant Navathe.
+- [ ] 📖 Leitura do Capítulo 06 (páginas 96 a 129) do livro 'Sistemas de Banco de Dados', 6ª Edição, de Ramez Elmasri e Shamkant Navathe.
 
   
-  Conteúdo da Atividade Avaliativa:
+**Conteúdo da Atividade Avaliativa**:
   * Álgebra Relacional e Engenharia Reversa
 
   Bons estudos!
