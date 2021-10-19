@@ -221,14 +221,26 @@ Bons estudos!
 | **`←`** | Atribuição | variável **←** Relação | Adicional
 
 #### Operações Unárias
+
 * Seleção
-	<code></code>
+  > A operação de seleção é usada para *selecionar um subconjunto das tuplas*
+  > de uma relação  que satisfazem uma condição de **seleção**. Ela é um filtro
+  > que que retem apenas as tuplas que satisfazem à condição de seleção, as
+  > demais tuplas são descartadas.
+	<code>σ~~DNO = 4~~ ( FUNCIONARIO )</code>
+  <code>**σ** <sub>condição</sub>( R )</code>
+  > onde condição de seleção é uma expressão Booleana especificada sobre atributos da relação R 
+
 * Projeção
+  > Essa operação escolhe algumas colunas da relação e descarta as demais colunas. A PROJEÇÃO cria uma partição vertical da relação contendo apenas os atributos (colunas) especificados.
+  <code>π~~UNOME, PNOME, SALARIO~~ ( FUNCIONARIO )</code>
+  <code>π~~SEXO, SALARIO~~ ( FUNCIONARIO )</code>
+
 * Renome
-	
-	<code>ρ TEMP (σ<sub>DNO = 5</sub>(EMPREGADO))</code> </br>
-	<code>ρ R (π<sub>PNOME, UNOME, SALARIO</sub>(TEMP))</code> </br>
-	<code>ρ (PRIMEIRONOME, ULTIMONOME, SALARIO) (R)</code> </br>
+
+	<code>ρ TEMP ( σ<sub>DNO = 5</sub>( FUNCIONARIO ) )</code> </br>
+	<code>ρ R ( π<sub>PNOME, UNOME, SALARIO</sub>( TEMP ) )</code> </br>
+	<code>ρ ( PRIMEIRONOME, ULTIMONOME, SALARIO ) ( R )</code> </br>
 
 #### Operações da Teoria dos Conjuntos
 * União
