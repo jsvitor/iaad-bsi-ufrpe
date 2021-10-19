@@ -202,10 +202,14 @@ Bons estudos!
 
 - [ ] 📖 Leitura do Capítulo 06 (páginas 96 a 129) do livro 'Sistemas de Banco de Dados', 6ª Edição, de Ramez Elmasri e Shamkant Navathe.
 
+Bons estudos!
 
+-----------------------
+	
 **Resumo do Conteúdo da Atividade Avaliativa**:
-
-* ### Álgebra Relacional
+	
+	
+### Álgebra Relacional
 
 |Síbolo| Operação |	Sintaxe	| Tipo
 |--|--|--|--|
@@ -222,25 +226,24 @@ Bons estudos!
 
 #### Operações Unárias
 
-* Seleção
-  > A operação de seleção é usada para *selecionar um subconjunto das tuplas*
-  > de uma relação  que satisfazem uma condição de **seleção**. Ela é um filtro
-  > que que retem apenas as tuplas que satisfazem à condição de seleção, as
-  > demais tuplas são descartadas.
-	<code>σ~~DNO = 4~~ ( FUNCIONARIO )</code>
-  <code>**σ** <sub>condição</sub>( R )</code>
-  > onde condição de seleção é uma expressão Booleana especificada sobre atributos da relação R 
+> ##### Seleção
+> A operação de seleção é usada para *selecionar um subconjunto das tuplas*
+> de uma relação  que satisfazem uma condição de **seleção**. Ela é um filtro
+> que que retem apenas as tuplas que satisfazem à condição de seleção, as
+> demais tuplas são descartadas.</br>
+<code>σ <sub>DNO = 4</sub> ( FUNCIONARIO )</code></br>
+<code>**σ** <sub>condição</sub>( R )</code></br>
+> onde condição de seleção é uma expressão Booleana especificada sobre atributos da relação R 
 
-* Projeção
-  > Essa operação escolhe algumas colunas da relação e descarta as demais colunas. A PROJEÇÃO cria uma partição vertical da relação contendo apenas os atributos (colunas) especificados.
-  <code>π~~UNOME, PNOME, SALARIO~~ ( FUNCIONARIO )</code>
-  <code>π~~SEXO, SALARIO~~ ( FUNCIONARIO )</code>
+> ##### Projeção
+> Essa operação escolhe algumas colunas da relação e descarta as demais colunas. A PROJEÇÃO cria uma partição vertical da relação contendo apenas os atributos (colunas) especificados.</br>
+<code>π <sub>UNOME, PNOME, SALARIO</sub> ( FUNCIONARIO )</code></br>
+<code>π <sub>SEXO, SALARIO</sub> ( FUNCIONARIO )</code></br>
 
-* Renome
-
-	<code>ρ TEMP ( σ<sub>DNO = 5</sub>( FUNCIONARIO ) )</code> </br>
-	<code>ρ R ( π<sub>PNOME, UNOME, SALARIO</sub>( TEMP ) )</code> </br>
-	<code>ρ ( PRIMEIRONOME, ULTIMONOME, SALARIO ) ( R )</code> </br>
+> ##### Renome
+> <code>ρ TEMP ( σ<sub>DNO = 5</sub>( FUNCIONARIO ) )</code> </br>
+> <code>ρ R ( π<sub>PNOME, UNOME, SALARIO</sub>( TEMP ) )</code> </br>
+> <code>ρ ( PRIMEIRONOME, ULTIMONOME, SALARIO ) ( R )</code> </br>
 
 #### Operações da Teoria dos Conjuntos
 * União
@@ -251,8 +254,6 @@ Bons estudos!
 * Produto
 * Junção
 
-	
-Bons estudos!
 
 
   
