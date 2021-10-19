@@ -225,12 +225,10 @@ Bons estudos!
 	<code></code>
 * Projeção
 * Renome
-	<code>
-		ρ TEMP (σ<sub>DNO = 5</sub>(EMPREGADO))
-
-		ρ R (π<sub>PNOME, UNOME, SALARIO</sub>(TEMP))
-		ρ (PRIMEIRONOME, ULTIMONOME, SALARIO) (R)
-	</code>
+	
+	<code>ρ TEMP (σ<sub>DNO = 5</sub>(EMPREGADO))</code> </br>
+	<code>ρ R (π<sub>PNOME, UNOME, SALARIO</sub>(TEMP))</code> </br>
+	<code>ρ (PRIMEIRONOME, ULTIMONOME, SALARIO) (R)</code> </br>
 
 #### Operações da Teoria dos Conjuntos
 * União
