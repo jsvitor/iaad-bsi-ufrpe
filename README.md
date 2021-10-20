@@ -16,20 +16,20 @@
 <details>
 	<summary>Ementa</summary>
 
-### III – OBJETIVOS DA DISCIPLINA
+### OBJETIVOS DA DISCIPLINA
 
 * Proporcionar aos estudantes conhecimentos teóricos e práticos acerca das principais características, arquitetura e necessidades de uso de SGBDs;
 * Compreender as especificidades dos BDs relacionais e diferenciá-los de outros modelos de dados;
 * Elaborar e executar comandos/consultas em Structured Query Language - SQL;
 * Implementar bancos de dados eficientes, utilizando a abordagem relacional (e não-relacional), considerando as restrições de integridade, privacidade e segurança das informações.
 
-### IV – CONTEÚDO PROGRAMÁTICO
+### CONTEÚDO PROGRAMÁTICO
 1. Armazenamento de dados semiestruturados, Modelo Relacional e Normalização;
 2. SGBD: Consultas, Transações, Concorrência, Desempenho, Otimização e Segurança;
 3. Formalização: Modelo Conceitual e Álgebra Relacional;
 4. Tópicos Avançados: NoSQL, Banco de Dados Distribuídos e Database as a Service (DaaS).	
 
-### IX – BIBLIOGRAFIA
+### BIBLIOGRAFIA
 > #### BÁSICA:
 >
 > 1. ELMASRI, Ramez; NAVATHE, Shamkant B. Sistemas de banco de dados. 7a ed. São Paulo: Pearson, 2018, 1152 p. ISBN 978-8543025001.
