@@ -206,11 +206,20 @@ Bons estudos!
 
 -----------------------
 	
-**Resumo do Conteúdo da Atividade Avaliativa**:
+**Resumo/(Notas do livro) do Conteúdo da Atividade Avaliativa**:
 	
+## Modelo Relacional	
+### Álgebra Relacional e o Cálculo Relacional
+> Segundo Elmasri e Navathe:
+> São linguagens formais para o modelo relacional, sendo o padrão SQL a linguagem prática.
+> Lembre-se:
+> "*um modelo de dados* **precisa incluir** um **conjunto de operações para manipular** o banco de dados, **além dos conceitos do 
+> modelo de dados** **para definir** a **estrutura e as restrições** do banco de dados. Apresentamos as estruturas 
+> e as restrições do modelo relacional formal no Capítulo 3."
+> 
+> #### Cálculo Relacional de Tupla (variáveis estendem-se por *tuplas*) e Cálculo Relacional de Domínio (variáveis estendem-se por *domínios* (valores) de atributos."
+> o cálculo relaciona é fundamentando no ramo da lógica matemática chamado de cálculo de de predicado.
 	
-### Álgebra Relacional
-
 |Síbolo| Operação |	Sintaxe	| Tipo
 |--|--|--|--|
 | **`σ`** | Seleção / restrição | **σ** <sub>condição</sub> ( Relação ) | Primitiva
@@ -224,35 +233,56 @@ Bons estudos!
 | **`ρ`** | Renomeação | **ρ** nome( Relação ) | Primitiva
 | **`←`** | Atribuição | variável **←** Relação | Adicional
 
+> algumas operações/solicitações de banco de dados relacionais que não constavam na álgebra relacional primitiva, tiveram que ser adicionadas.
+> estas incluem funções de agregação, que são operações que podem resumir dados das tabelas.
+	
+#### As operações podem ser divididas em dois grupos
+	
 #### Operações Unárias
+> Um operador unário significa que ele só pode ser aplicado apenas a uma relação.
 
 > ##### Seleção
 > A operação de seleção é usada para *selecionar um subconjunto das tuplas*
 > de uma relação  que satisfazem uma condição de **seleção**. Ela é um filtro
 > que que retem apenas as tuplas que satisfazem à condição de seleção, as
 > demais tuplas são descartadas.</br>
+> Sendo o **grau** - seu número de atributos - da relação resultante de uma operação de SELEÇÃO *igual ou menor* ao número de tuplas em R.
 <code>σ <sub>DNO = 4</sub> ( FUNCIONARIO )</code></br>
 <code>**σ** <sub>condição</sub>( R )</code></br>
 > onde condição de seleção é uma expressão Booleana especificada sobre atributos da relação R 
+> a fração de tuplas selecionadas por uma condição de seleção é conhecidada como **seletividade**.
+
 
 > ##### Projeção
-> Essa operação escolhe algumas colunas da relação e descarta as demais colunas. A PROJEÇÃO cria uma partição vertical da relação contendo apenas os atributos (colunas) especificados.</br>
+> Essa operação escolhe algumas colunas da relação e descarta as demais colunas. A PROJEÇÃO cria uma partição vertical da relação contendo apenas os atributos (colunas) especificados fazendo a eleminação de duplicatas.</br>
 <code>π <sub>UNOME, PNOME, SALARIO</sub> ( FUNCIONARIO )</code></br>
 <code>π <sub>SEXO, SALARIO</sub> ( FUNCIONARIO )</code></br>
 
 > ##### Renome
+> Por meio da operação de renome, podemos criar **relações de resultado intermediário.**
 > <code>ρ TEMP ( σ<sub>DNO = 5</sub>( FUNCIONARIO ) )</code> </br>
 > <code>ρ R ( π<sub>PNOME, UNOME, SALARIO</sub>( TEMP ) )</code> </br>
 > <code>ρ ( PRIMEIRONOME, ULTIMONOME, SALARIO ) ( R )</code> </br>
 
-#### Operações da Teoria dos Conjuntos
+#### Operações da Álgebra Relacional com Base na **Teoria dos Conjuntos**
 * União
 * Intersecção
 * Diferença
 
-#### Operações Binárias
-* Produto
-* Junção
+#### Operações Binárias complexas
+
+> Esta também é uma operação de conjunto binária, mas as relações sobre as quais ela é
+> aplicada não precisam ser compatíveis na união.
+> Operam sobre duas tabelas combinando tuplas relacionadas (registros) baseadas em condições de junção.
+
+> ##### Produto
+> Também conhecida como **produto cruzado** ou **junção cruzada**.
+> Em sua forma binária, esta operação de conjunto produz um novo elemento combinando cada membro 
+> (tupla) de uma relação (conjunto) com cada membro (tupla) da outra relação (conjunto).
+
+> ##### Junção
+
+> ##### Divisão
 
 
 
