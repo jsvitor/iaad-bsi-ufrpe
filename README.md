@@ -29,7 +29,7 @@
 3. Formalização: Modelo Conceitual e Álgebra Relacional;
 4. Tópicos Avançados: NoSQL, Banco de Dados Distribuídos e Database as a Service (DaaS).	
 
-### IX – BIBLIOGRAFIA
+### BIBLIOGRAFIA
 > #### BÁSICA:
 >
 > 1. ELMASRI, Ramez; NAVATHE, Shamkant B. Sistemas de banco de dados. 7a ed. São Paulo: Pearson, 2018, 1152 p. ISBN 978-8543025001.
