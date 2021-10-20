@@ -54,3 +54,8 @@ CREATE TABLE IF NOT EXISTS Programador_Linguagem(
     PRIMARY KEY(id_programador, id_linguagem)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
+-- ALTERANDO AS RELACOES PARA ADICAO DAS RESTRICOES DE INTEGRIDADE REFERENCIAL
+ALTER TABLE Programador ADD FOREIGN KEY(id_startup) REFERENCES Startup(id_startup);
+ALTER TABLE Programador_Linguagem ADD FOREIGN KEY(id_programador) REFERENCES Programador(id_programador);
+ALTER TABLE Programador_Linguagem ADD FOREIGN KEY(id_linguagem) REFERENCES Linguagem_Programacao(id_linguagem);
+
