@@ -17,9 +17,9 @@
  */
 BEGIN;
 
-CREATE SCHEMA startup_bd;
+CREATE SCHEMA BD_Startup;
 
-USE startup_bd;
+USE BD_Startup;
 
 CREATE TABLE IF NOT EXISTS Startup(
 	id_startup INT NOT NULL UNIQUE,
