@@ -265,9 +265,18 @@ Bons estudos!
 > <code>ρ ( PRIMEIRONOME, ULTIMONOME, SALARIO ) ( R )</code> </br>
 
 #### Operações da Álgebra Relacional com Base na **Teoria dos Conjuntos**
-* União
-* Intersecção
-* Diferença
+> ##### União
+> retorna a união dos valores de duas relações, eliminando as duplicatas.
+> comutativa.
+ 
+> ##### Intersecção
+> retorna o que é comum para ambas as relações.
+> comutativa.
+
+
+> ##### Diferença
+> retorna tudo que está em aluno, menos as que estão em instrutor.
+> não comutativa.
 
 #### Operações Binárias complexas
 
@@ -281,6 +290,10 @@ Bons estudos!
 > (tupla) de uma relação (conjunto) com cada membro (tupla) da outra relação (conjunto).
 
 > ##### Junção
+> Consiste na sequência de um produto cartesiano seguido de uma junção.
+> Podendo ser uma:
+> Equijunção: quando a condição é uma igualdade.
+> Junção natural: quando os valores comparados possuem o mesmo nome de atributo.
 
 > ##### Divisão
 
