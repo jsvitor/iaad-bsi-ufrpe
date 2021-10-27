@@ -297,7 +297,7 @@ Bons estudos!
 
 > ##### Divisão
 
-
+- [x] https://spaceprogrammer.com/bd/aprendendo-as-principais-operacoes-da-algebra-relacional/
 
   
 
