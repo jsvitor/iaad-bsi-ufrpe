@@ -169,9 +169,9 @@ Bons estudos!
 
 ### Objetivos:
 
-- [ ] Obter uma visão geral sobre Modelagem de Dados, usando o modelo Entidade-Relacionamento Estendido (EER), por meio da Engenharia Reversa.
+- [x] Obter uma visão geral sobre Modelagem de Dados, usando o modelo Entidade-Relacionamento Estendido (EER), por meio da Engenharia Reversa.
 
-- [ ] Aprender a especificar consultas da Álgebra Relacional usando as operações unárias, binárias e com base na teoria dos conjuntos.
+- [x] Aprender a especificar consultas da Álgebra Relacional usando as operações unárias, binárias e com base na teoria dos conjuntos.
 
 - [ ] Realizar a atividade avaliativa.
 
