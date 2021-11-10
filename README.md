@@ -303,3 +303,44 @@ Bons estudos!
 
 </details>
 
+## Semana 09 à 10
+
+<details>
+
+A 2ª VA é composta por duas atividades, ambas em equipe: SEMINÁRIO e IMPLEMENTAÇÃO.
+
+SEMANAS 9 e 10: SEMINÁRIO
+SEMANAS 11 A 13: IMPLEMENTAÇÃO
+
+Leiam atentamente as orientações abaixo sobre o seminário.
+As equipes devem ser formadas por no mínimo 3 e máximo 5 integrantes, considerando as seguintes opções:
+Situação 1: equipes formadas por estudantes que estão cursando a disciplina Projeto 3 neste período letivo (ou que já cursaram, com aprovação, em semestres anteriores). 
+Situação 2: equipes formadas por estudantes que NÃO estão cursando a disciplina Projeto 3 e não cursaram nos período anteriores.
+Cada equipe deverá produzir um vídeo, apresentando um seminário PRÁTICO sobre um dos temas a seguir (escolha livre):
+Banco de Dados NoSQL
+Exemplos de BD NoSQL open source: MongoDB, Redis, Cassandra, Google Cloud Firestore (Firebase), Neo4j, HBase, Couchbase, Apache CouchDB, Riak, ArangoDB, OrientDB, RethinkDB, RavenDB, entre outros.
+Banco de Dados Geográfico
+Exemplos de ferramentas open source que lidam com Sistemas de Informações Geográficas (SIG): QGIS, PostGIS, entre outras.
+DataViz - Visualização e Análise de Dados
+Exemplos de ferramentas (open source ou versões de teste/trial): Tableau Public, Qlik (Qlik Sense, QlikView), PowerBI, BIRT, Metabase, IBM Watson Analytics, entre outras. 
+Observação: não deverá haver conteúdos repetidos nos seminários (exceto as equipes da situação 1), isto é, não podem ter duas ou mais equipes apresentando o mesmo assunto/BD. Por isso, assim que a equipe e tema do seminário forem definidos, incluam as informações no link disponibilizado no final desse guia.
+
+🎦 O tempo estimado para o seminário é 20 minutos. 
+Todos os integrantes da equipe devem participar do vídeo. Ao iniciar sua fala no seminário, informar seu nome.
+Distribuam adequadamente o tempo de fala de cada integrante da equipe. 
+
+Por ser um seminário PRÁTICO, cada equipe deverá abordar o processo de instalação, configurações iniciais, funcionalidades gerais, e um exemplo prático das operações. Para as equipes que escolherem BD NoSQL ou BD Geográfico, os exemplos devem envolver as operações CRUD (ou seja, exemplificar como são realizadas as operações de armazenamento/carga, leitura, atualização e remoção de dados). 
+
+ATENÇÃO: Se sua equipe faz parte da "Situação 1", os exemplos devem ser baseados no escopo/domínio do projeto 3. 
+Se sua equipe faz parte da "Situação 2", os exemplos devem ser baseados nas informações dispostas no esquema Empresa (Funcionário, Departamento, Projeto, Dependentes, Trabalha_Em...).
+
+📝 Pontuação do seminário: 10 pontos.
+
+⏰Prazo para postagem do seminário: 12/11/2021 (sexta-feira)
+Inserir link do seminário neste documento: https://docs.google.com/document/d/1B7POv_kR3osW3Ory0wpcKoCELfgFg1jIGDy11k8UnSw/edit?usp=sharing
+
+
+Recomendação: fiquem atentos à qualidade do vídeo e áudio do seminário, a fim de minimizar ruído. Disponibilizem o vídeo em boa/alta resolução. 
+	
+	
+</details>
