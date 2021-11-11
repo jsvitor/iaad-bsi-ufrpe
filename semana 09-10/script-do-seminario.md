@@ -18,6 +18,13 @@
 
 ### Usando MongoDB no Docker
 
+O Docker é uma ferramenta para criar, implantar e rodar aplicações usando facilmente containers.
+Um contêiner é uma unidade padrão de software que pode ser usada para
+empacotar aplicativos e todas as dependências em um único pacote.
+Esses contêineres podem ser executados em qualquer plataforma de servidor,
+independentemente da configuração subjacente ou da estrutura de hardware.
+
+
 > acesse o [Play With Docker](https://labs.play-with-docker.com/) e execute os passos abaixo.
 
 Primeiro vamos baixar a imagem oficial do MongoDB por meio do seguinte comando:
@@ -31,17 +38,21 @@ $ docker pull mongo:latest
 Tendo instalado a imagem do MongoDB, basta instanciar um container MongoDB por meio do comando abaixo:
 
 ```bash
-$ docker run -d -p 27017:27017 -p 28017:28017 -e MONGODB_PASS="mypass" mongo
-$ docker run -d  --name mongo-on-docker  -p 27888:27017 -e MONGO_INITDB_ROOT_USERNAME=mongoadmin -e MONGO_INITDB_ROOT_PASSWORD=secret mongo
+$ docker run -d  --name mongo-on-docker -p 27888:27017 -e MONGO_INITDB_ROOT_USERNAME=mongoadmin -e MONGO_INITDB_ROOT_PASSWORD=secret mongo
 ```
+
+![docker-ports](https://www.code4it.dev/static/7e983e27425fb44d41cf3189d3835b92/84f4d/Docker-ports.png)
+
 
 Agora, tendo uma instância do MongoDB, basta executar o comando abaixo para rodar o container:
 
 ```bash
-$ docker exec -it mongo-on-docker mongo
+$ docker exec -it mongo-on-docker bash
 ```
 
 Simples assim, com apenas três comandos você já consegue instalar, configurar e executar o MongoDB.
+
+[Mongo Official Image | Docker Hub](https://hub.docker.com/_/mongo)
 
 ## Configurações Iniciais
 
@@ -53,4 +64,7 @@ Simples assim, com apenas três comandos você já consegue instalar, configurar
 ## Referências:
 
 * https://medium.com/dockerbr/mongodb-no-docker-dd3b72c7efb7
+* https://www.code4it.dev/blog/run-mongodb-on-docker
+* https://www.youtube.com/watch?v=DbKPeaVHwdE
+* https://hub.docker.com/_/mongo
 * 
