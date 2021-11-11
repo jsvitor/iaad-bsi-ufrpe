@@ -1,20 +1,24 @@
-# Seminário prático sobre MongoDB
+# 💚Seminário prático sobre MongoDB
 
-## Introdução ao MongoDB;
-- o quê é o mongo db?
-- para que serve o mongodb?
+## Introdução ao MongoDB
+- O que é o mongo db?
+- Para que serve o mongodb?
 - Onde é usado o mongodb?
 - Por quem é usado?
 - Como o mongodb armazena os dados?
 - Vantagens e desvantagens
-- funcionalidades gerais
+- Funcionalidades gerais
 
 ## Processo de instalação
 
-> * Docker
+Há diversas formas de usar o MongoDB, entre elas destaco:
+
+> * Em um container Docker
 > * Executável
 > * Usando na núvem
 > * Sandbox
+
+Para este seminário, optei por mostrar a configuração do ambiente usando o Docker.
 
 ### Usando MongoDB no Docker
 
@@ -57,9 +61,11 @@ Simples assim, com apenas três comandos você já consegue instalar, configurar
 ## Configurações Iniciais
 
 
-## um exemplo prático das operações CRUD envolvendo o empresa
+### Exemplo prático das operações CRUD envolvendo o esquema empresa:
 
 * Empresa (Funcionário, Departamento, Projeto, Dependentes, Trabalha_Em...)
+
+![Esquema empresa](https://raw.githubusercontent.com/jsvitor/iaad-bsi-ufrpe/main/semana%2003-04/empresa_diagram.png)
 
 <details>
   <summary>Comandos</summary>
@@ -93,11 +99,10 @@ show dbs;
 ```sh
 
 ```
-### Operações CRUD
-https://docs.mongodb.com/manual/crud/
 
 </details>
 
+#### [Operações CRUD](https://docs.mongodb.com/manual/crud/)
 
 ## Referências:
 
@@ -105,4 +110,4 @@ https://docs.mongodb.com/manual/crud/
 * https://www.code4it.dev/blog/run-mongodb-on-docker
 * https://www.youtube.com/watch?v=DbKPeaVHwdE
 * https://hub.docker.com/_/mongo
-* 
+* https://docs.mongodb.com/manual/crud/
