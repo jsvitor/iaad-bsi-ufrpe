@@ -4,12 +4,26 @@
 
 ## Introdução ao MongoDB
 - O que é o mongo db?
+É o banco de dados orientado a objetos mais popular, estando em 5º lugar dos bancos mais usados no mundo e em primeiro como banco de dados NoSQL.
+Ele armazena os dados num formado semelhante ao JSON e é de esquema livre.
+
 - Para que serve o mongodb?
+Ele foi criado em 2007, por componentes da Double Click, uma empresa que veícula cerca de 400.000 anúncios por segundo, mas muitas vezes sofria com escalabilidade e agilidade.
+
 - Onde é usado o mongodb?
-- Por quem é usado?
+Em cenários de Big Data.
+
 - Como o mongodb armazena os dados?
+![How-mongodb-works](https://miro.medium.com/max/1400/1*fQbtENxfv757UXuzGQQ3gQ.png)
+
 - Vantagens e desvantagens
+
+![aplicações](https://blog.couchbase.com/wp-content/uploads/2017/04/nosql-vs-sql-overview-1.png)
+
 - Funcionalidades gerais
+* Escalabilidade horizontal (sharding)
+* Suporte de múltiplos engines de armazenamento
+* Alta performance
 
 ## Processo de instalação
 
@@ -65,7 +79,6 @@ Simples assim, com apenas três comandos você já consegue instalar, configurar
 
 ### Exemplo prático das operações CRUD envolvendo o esquema empresa:
 
-* Empresa (Funcionário, Departamento, Projeto, Dependentes, Trabalha_Em...)
 
 ![Esquema empresa](https://raw.githubusercontent.com/jsvitor/iaad-bsi-ufrpe/main/semana%2003-04/empresa_diagram.png)
 
