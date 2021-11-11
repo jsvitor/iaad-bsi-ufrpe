@@ -93,24 +93,8 @@ show dbs;
 ```sh
 
 ```
-
-###
-
-```sh
-
-```
-
-###
-
-```sh
-
-```
-
-###
-
-```sh
-
-```
+### Operações CRUD
+https://docs.mongodb.com/manual/crud/
 
 </details>
 
