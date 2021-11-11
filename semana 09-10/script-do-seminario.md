@@ -1,4 +1,6 @@
-# 💚Seminário prático sobre MongoDB
+# 💚 Seminário prático sobre MongoDB
+
+![mongodb logo](https://webimages.mongodb.com/_com_assets/cms/kuyjf3vea2hg34taa-horizontal_default_slate_blue.svg?auto=format%252Ccompress)
 
 ## Introdução ao MongoDB
 - O que é o mongo db?
