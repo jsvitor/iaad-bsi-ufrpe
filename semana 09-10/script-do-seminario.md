@@ -46,8 +46,8 @@ $ docker run -d  --name mongo-on-docker -p 27888:27017 -e MONGO_INITDB_ROOT_USER
 
 Agora, tendo uma instância do MongoDB, basta executar o comando abaixo para rodar o container:
 
-```bash
-$ docker exec -it mongo-on-docker bash
+```sh
+docker exec -it mongo-on-docker mongosh --port 27017  --authenticationDatabase "admin" -u "mongoadmin" -p
 ```
 
 Simples assim, com apenas três comandos você já consegue instalar, configurar e executar o MongoDB.
@@ -60,6 +60,60 @@ Simples assim, com apenas três comandos você já consegue instalar, configurar
 ## um exemplo prático das operações CRUD envolvendo o empresa
 
 * Empresa (Funcionário, Departamento, Projeto, Dependentes, Trabalha_Em...)
+
+<details>
+  <summary>Comandos</summary>
+
+#### Para exibir os bancos de dados existentes:
+
+```sh
+show dbs;
+```
+
+#### Para alterar o database:
+
+```sh
+use nome-do-database-desejado
+```
+
+### Para criar uma Collection
+
+```sh
+db.createCollection('nome-da-collection')
+```
+
+### Para listar os bancos de dados:
+
+```sh
+show dbs;
+```
+
+###
+
+```sh
+
+```
+
+###
+
+```sh
+
+```
+
+###
+
+```sh
+
+```
+
+###
+
+```sh
+
+```
+
+</details>
+
 
 ## Referências:
 
