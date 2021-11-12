@@ -83,9 +83,6 @@ Simples assim, com apenas três comandos você já consegue instalar, configurar
 ![Esquema empresa](https://raw.githubusercontent.com/jsvitor/iaad-bsi-ufrpe/main/semana%2003-04/empresa_diagram.png)
 
 <details>
-  <summary>Comandos</summary>
-
-<details>
   <summary>alguns comandos</summary>
   
 #### Para exibir os bancos de dados existentes:
@@ -112,6 +109,12 @@ db.createCollection('nome-da-collection')
 show dbs;
 ```
 
+
+</details>
+
+<details>
+  <summary>COLLECTIONS</summary>
+	
 ### Criar a collection de Funcionário
 
 ```sh
@@ -147,8 +150,10 @@ db.createCollection("PROJETO")
 ```sh
 db.createCollection("TRABALHA_EM")
 ```
+
 </details>
-  
+
+
 <details>
    <summary>INSERT</summary>
   
@@ -316,17 +321,29 @@ db.LOCALIZACAO.DEP.insertMany(
   
 <details>
   <summary>UPDATE</summary>
-  
+  	
+	
+	
 </details>
   
 
 <details>
   <summary>DELETE</summary>
 
+### remover/deletar documento
+ 
+````
+db.FUNCIONARIO.remove({“Cpf”: “99988777767”})
+````
+ 
+### remover/deletar uma collection:
+ 
+````
+db.FUNCIONARIO.remove({}); 
+````
+	
 </details>
   
-  
-</details>
 
 #### [Operações CRUD](https://docs.mongodb.com/manual/crud/)
 
