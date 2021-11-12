@@ -161,65 +161,66 @@ db.createCollection("TRABALHA_EM")
 ### Insere registros de funcionário
  
 ````
-Inserir dados: db.FUNCIONARIO.insertMany([
+db.FUNCIONARIO.insertMany([
   {
     "Pnome": "João", 
-    "Minicial": “B”,
-	“Unome”: “Silva” ,
-“Cpf”: “12345678966” ,
-“Datanasc”: “1965-01-09” ,
-“Endereco”: “Rua das flores, 751, São Paulo, SP” ,
-“Sexo”: “M”,
-“Salario”: 30000,
-“Cpf_supervisor”: “33344555587”,
-“Dnr” 5:    
+    "Minicial": "B",
+	"Unome": "Silva" ,
+"Cpf": "12345678966" ,
+"Datanasc": "1965-01-09" ,
+"Endereco": "Rua das flores, 751, São Paulo, SP" ,
+"Sexo": "M",
+"Salario": 30000,
+"Cpf_supervisor": "33344555587",
+"Dnr": 5    
   },
   {
     "Pnome": "Fernando", 
-    "Minicial": “T”,
-	“Unome”: “Wong”,
-“Cpf”: “33344555587”,
-“Datanasc”: “1955-12-08”,
-“Endereco”: “Rua da lapa, 34, Sao Paulo, SP”,
-“Sexo”: “M”,
-“Salario”: 40000,
-“Cpf_supervisor”: “88866555576”,
-“Dnr”: 5   
+    "Minicial": "T",
+	"Unome": "Wong",
+"Cpf": "33344555587",
+"Datanasc": "1955-12-08",
+"Endereco": "Rua da lapa, 34, Sao Paulo, SP",
+"Sexo": "M",
+"Salario": 40000,
+"Cpf_supervisor": "88866555576",
+"Dnr": 5   
   }, {
     "Pnome": "Alice", 
-    "Minicial": “J”,
-	“Unome”: “Zelaya”,
-“Cpf”: “99988777767”,
-“Datanasc”: “1968-01-19”,
-“Endereco”: “Rua Souza Lima, 35, Curitiba, PR”,
-“Sexo”: “F”,
-“Salario”: 25000,
-“Cpf_supervisor”: “98765432168”,
-“Dnr”: 4   
+    "Minicial": "J",
+	"Unome": "Zelaya",
+"Cpf": "99988777767",
+"Datanasc": "1968-01-19",
+"Endereco": "Rua Souza Lima, 35, Curitiba, PR",
+"Sexo": "F",
+"Salario": 25000,
+"Cpf_supervisor": "98765432168",
+"Dnr": 4   
   }, {
     "Pnome": "Jennifer", 
-    "Minicial": “S”,
-	“Unome”: “Souza”,
-“Cpf”: “98765432168”,
-“Datanasc”: “1941-06-20”,
-“Endereco”: “Av. Arthur de Lima, 54, Santo Andre, SP”,
-“Sexo”: “F”,
-“Salario”: 43000,
-“Cpf_supervisor”: “88866555576”,
-“Dnr”: 4   
+    "Minicial": "S",
+	"Unome": "Souza",
+"Cpf": "98765432168",
+"Datanasc": "1941-06-20",
+"Endereco": "Av. Arthur de Lima, 54, Santo Andre, SP",
+"Sexo": "F",
+"Salario": 43000,
+"Cpf_supervisor": "88866555576",
+"Dnr": 4   
   }, {
     "Pnome": "Ronaldo", 
-    "Minicial": “K”,
-	“Unome”: “Lima”,
-“Cpf”: “66688444476”,
-“Datanasc”: “1962-09-15”,
-“Endereco”: “Rua Rebouças,65, Piracicaba, SP”,
-“Sexo”: “M”,
-“Salario”: 38000,
-“Cpf_supervisor”: “33344555587”,
-“Dnr”: 1   
+    "Minicial": "K",
+	"Unome": "Lima",
+"Cpf": "66688444476",
+"Datanasc": "1962-09-15",
+"Endereco": "Rua Rebouças,65, Piracicaba, SP",
+"Sexo": "M",
+"Salario": 38000,
+"Cpf_supervisor": "33344555587",
+"Dnr": 1   
   }
 ])
+
 ````
   
 ### Insere documentos em Departamento
@@ -312,9 +313,28 @@ db.LOCALIZACAO.DEP.insertMany(
 <details>
   <summary>READ</summary>
 
+  
+### Ler todos os documentos da collection:
  
+````mongosh
+db.FUNCIONARIO.find().pretty()
+````
  
-
+### Ler um documento com um atributo com valor específico:
+ 
+````mongosh
+db.FUNCIONARIO.find({pnome: "João"})
+````
+### Listar funcionários com sexo femino
+ 
+````mongosh
+db.FUNCIONARIO.find({Sexo: "F"}).pretty()
+````
+ 
+### Find com o operador $and: 
+ 
+````mongosh
+db.FUNCIONARIO.find({ $and: [{Sexo: "F"}, {Unome: "Zelaya"}]}).pretty()
 
   
 </details>
@@ -322,7 +342,21 @@ db.LOCALIZACAO.DEP.insertMany(
 <details>
   <summary>UPDATE</summary>
   	
+ 
+### Atualização de funcionário:
+ 
+````mongosh
+db.FUNCIONARIO.updateOne({Cpf: "12345678966"}, {$set: {salario: 40000 }});
+````
+
+````
+db. FUNCIONARIO.updateMany({Salario:{$lt 25000} }, {$set: {Salario: 30000}}
+````
 	
+````
+db.FUNCIONARIO.replaceOne({Salario:{$gt 40000}}, {$set: {Salario_Surpervisor:40000}}
+````
+
 	
 </details>
   
