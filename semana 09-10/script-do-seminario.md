@@ -8,7 +8,7 @@
 Ele armazena os dados num formado semelhante ao JSON e é de esquema livre.
 
 - Para que serve o mongodb?
-Ele foi criado em 2007, por componentes da Double Click, uma empresa que veícula cerca de 400.000 anúncios por segundo, mas muitas vezes sofria com escalabilidade e agilidade.
+Ele foi criado em 2007, por componentes da Double Click, uma empresa que veículava cerca de 400.000 anúncios por segundo, mas muitas vezes sofria com escalabilidade e agilidade.
 
 - Onde é usado o mongodb?
 Em cenários de Big Data.
@@ -85,6 +85,9 @@ Simples assim, com apenas três comandos você já consegue instalar, configurar
 <details>
   <summary>Comandos</summary>
 
+<details>
+  <summary>alguns comandos</summary>
+  
 #### Para exibir os bancos de dados existentes:
 
 ```sh
@@ -109,15 +112,224 @@ db.createCollection('nome-da-collection')
 show dbs;
 ```
 
-###
+### Criar a collection de Funcionário
 
 ```sh
-
+db.createCollection("FUNCIONARIO")
 ```
+
+### Criar a collection de Departamento
+
+```sh
+db.createCollection("DEPARTAMENTO")
+```
+
+### Criar a collection de localização do departamento
+
+```sh
+db.createCollection("LOCALIZACAO_DEP")
+```  
+
+### Criar a collection de departamento
+
+```sh
+db.createCollection("DEPENDENTE")
+```
+
+### Criar a collection de projeto
+
+```sh
+db.createCollection("PROJETO")
+```
+
+### Criar a collection de trabalha_em
+
+```sh
+db.createCollection("TRABALHA_EM")
+```
+</details>
+  
+<details>
+   <summary>INSERT</summary>
+  
+
+### Insere registros de funcionário
+ 
+````
+Inserir dados: db.FUNCIONARIO.insertMany([
+  {
+    "Pnome": "João", 
+    "Minicial": “B”,
+	“Unome”: “Silva” ,
+“Cpf”: “12345678966” ,
+“Datanasc”: “1965-01-09” ,
+“Endereco”: “Rua das flores, 751, São Paulo, SP” ,
+“Sexo”: “M”,
+“Salario”: 30000,
+“Cpf_supervisor”: “33344555587”,
+“Dnr” 5:    
+  },
+  {
+    "Pnome": "Fernando", 
+    "Minicial": “T”,
+	“Unome”: “Wong”,
+“Cpf”: “33344555587”,
+“Datanasc”: “1955-12-08”,
+“Endereco”: “Rua da lapa, 34, Sao Paulo, SP”,
+“Sexo”: “M”,
+“Salario”: 40000,
+“Cpf_supervisor”: “88866555576”,
+“Dnr”: 5   
+  }, {
+    "Pnome": "Alice", 
+    "Minicial": “J”,
+	“Unome”: “Zelaya”,
+“Cpf”: “99988777767”,
+“Datanasc”: “1968-01-19”,
+“Endereco”: “Rua Souza Lima, 35, Curitiba, PR”,
+“Sexo”: “F”,
+“Salario”: 25000,
+“Cpf_supervisor”: “98765432168”,
+“Dnr”: 4   
+  }, {
+    "Pnome": "Jennifer", 
+    "Minicial": “S”,
+	“Unome”: “Souza”,
+“Cpf”: “98765432168”,
+“Datanasc”: “1941-06-20”,
+“Endereco”: “Av. Arthur de Lima, 54, Santo Andre, SP”,
+“Sexo”: “F”,
+“Salario”: 43000,
+“Cpf_supervisor”: “88866555576”,
+“Dnr”: 4   
+  }, {
+    "Pnome": "Ronaldo", 
+    "Minicial": “K”,
+	“Unome”: “Lima”,
+“Cpf”: “66688444476”,
+“Datanasc”: “1962-09-15”,
+“Endereco”: “Rua Rebouças,65, Piracicaba, SP”,
+“Sexo”: “M”,
+“Salario”: 38000,
+“Cpf_supervisor”: “33344555587”,
+“Dnr”: 1   
+  }
+])
+````
+  
+### Insere documentos em Departamento
+  
+````
+db.DEPARTAMENTO.insertMany([
+{ 
+ “dnome”: “Pesquisa”,
+“Dnumero”: “5”,
+“Cpf_gerente”: “33344555587”,
+“Data_inicio_gerente”: “22-05-1988”,
+},
+{
+“Dnome”: “Administração”,
+“Dnumero”: “4”,
+“Cpf_Gerente”: “98765432168”,
+“Data_Inicio_Gerente”: “01-01-1995”,
+},
+{
+ “dnome”: “Matriz”,
+“Dnumero”: “1”,
+“Cpf_gerente”: “88866555576”,
+“Data_inicio_gerente”: “19-06-1981”,
+},
+)
+```` 
+ 
+### Insere documentos em Projeto
+
+````
+db.PROJETO.insertMany(
+	
+[
+{“projnome”: “ProdutoX”,
+ “projnumero”: 1,
+ “projlocal”: “Santo André”,
+ “dnum”: 5,	},
+ 
+{“projnome”: “Produto Y”,
+ “projnumero”: 2,
+ “projlocal”: “Itu”,
+ “dnum”: 5,	},
+ 
+{“projnome”: “Produto Z”,
+ “projnumero”: 3,
+ “projlocal”: “São Paulo”,
+ “dnum”: 5,	},
+ 
+{“projnome”: “Informatização”,
+ “projnumero”: 10,
+ “projlocal”: “Mauá”,
+ “dnum”:4 ,	},
+ 
+{“projnome”: “Reorganização”,
+ “projnumero”: 20 ,
+ “projlocal”: “São Paulo”,
+ “dnum”: “1” ,	},
+ 
+{“projnome”: “Novosbeneficios”,
+ “projnumero”: 30 ,
+ “projlocal”: “Mauá”,
+ “dnum”: 4,	}
+]
+)
+````
+ 
+### Inserções de local
+ 
+```` 
+db.LOCALIZACAO.DEP.insertMany(
+	
+[
+{“dnumero”: 1,
+ “dlocal”: “São Paulo”},
+ 
+{“dnumero”: 4,
+ “dlocal”: “Mauá”},
+ 
+{“dnumero”: 5,
+ “dlocal”: “Santo André”},
+ 
+{“dnumero”: 5,
+ “dlocal”: “Itu”},
+]
+)
+````
 
 </details>
 
+<details>
+  <summary>READ</summary>
+
+ 
+ 
+
+
+  
+</details>
+  
+<details>
+  <summary>UPDATE</summary>
+  
+</details>
+  
+
+<details>
+  <summary>DELETE</summary>
+
+</details>
+  
+  
+</details>
+
 #### [Operações CRUD](https://docs.mongodb.com/manual/crud/)
+
 
 ## Referências:
 
