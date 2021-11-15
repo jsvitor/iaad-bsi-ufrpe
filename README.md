@@ -346,3 +346,68 @@ Recomendação: fiquem atentos à qualidade do vídeo e áudio do seminário, a 
 	
 	
 </details>
+
+
+## Semana 11 a 13 → Implementação
+
+<details>
+  <summary>Orientações da Profa. Roberta Macêdo 🐱‍🚀</summary>
+
+A 2ª VA é composta por duas atividades, ambas em equipe (3 a 5 integrantes):
+SEMANAS 9 e 10: SEMINÁRIO
+SEMANAS 11 A 13: IMPLEMENTAÇÃO
+
+Leiam ATENTAMENTE as orientações abaixo sobre a atividade de implementação.
+As equipes devem ser as mesmas formadas na atividade anterior (seminário).
+
+SITUAÇÃO 1: 
+Equipes formadas por estudantes que estão cursando a disciplina Projeto 3 neste período letivo (ou que já cursaram, com aprovação, em semestres anteriores). 
+➡ Implementar um sistema computacional baseado no escopo/domínio da base de dados utilizada em projeto 3. Deve-se utilizar o BD RELACIONAL MYSQL. 
+➡ Estudar o material extra sobre o processo de Normalização, cujos links estão indicados abaixo. Aplicar o processo de Normalização (até a 3ª FN). 
+
+SITUAÇÃO 2: 
+Equipes formadas por estudantes que NÃO estão cursando a disciplina Projeto 3 e não cursaram nos período anteriores.
+➡ Implementar um sistema computacional baseado no esquema de banco de dados “Clínicas Médicas” OU “Publicações Científicas”, utilizando o BD RELACIONAL MYSQL. Observação: o esquema “Clínicas Médicas” foi utilizado nas atividades 2 e 3, já o esquema “Publicações Científicas” foi utilizado na atividade 4.
+➡ Estudar o material extra sobre o processo de Normalização, cujos links estão indicados abaixo. Como os esquemas “Clínicas Médicas” e “Publicações Científicas” já se encontram normalizados, cada equipe deverá explicar no vídeo o porquê do esquema escolhido já está normalizado até a 3ª Forma Normal.
+
+ORIENTAÇÕES PARA TODOS OS GRUPOS:
+➡ A escolha da linguagem de programação é livre (python, dart, java, php, javascript, entre outras), mas o BD deve ser o MySQL.
+➡ O sistema deve contemplar as quatro operações básicas de CRUD (Create, Read, Update e Delete).
+➡ Incluir no sistema pelo menos um trigger e um stored procedure. 
+➡ Incluir no sistema no mínimo duas consultas, envolvendo junções, funções de agregação e agrupamentos. 
+➡ O banco de dados deve estar populado.
+➡ O sistema deve dispor de interface gráfica, seja web, mobile ou desktop.
+
+SOBRE A ENTREGA:
+➡ Cada grupo deverá produzir um VÍDEO explicando o processo de desenvolvimento do sistema, bem como o passo a passo com as orientações de configurações do ambiente e execução do programa, incluindo as informações das bibliotecas/pacotes, versões dos programas/ferramentas, APIs, dependências, padrão de projeto (arquitetura), ambiente de desenvolvimento (IDE) e frameworks utilizados no desenvolvimento do sistema. 
+➡ Explicar no vídeo os objetivos das duas consultas, do trigger e do stored procedure implementados pela equipe, apresentando exemplos deles sendo ativado/executado. 
+➡ Cada grupo deverá disponibilizar o link do Google Drive (ou GitHub) contendo o arquivo compactado (rar, zip, bz2 ou afins) do código fonte do programa, e o script de criação do BD populado (arquivo .sql).
+➡ Recomendação: fiquem atentos à qualidade do vídeo e áudio, a fim de minimizarem ruídos. Disponibilizem o vídeo em boa/alta resolução. 
+
+⏰ Prazo para postagem do link do vídeo explicativo e código: 03/12/2021
+Inserir link neste documento: https://docs.google.com/document/d/1B7POv_kR3osW3Ory0wpcKoCELfgFg1jIGDy11k8UnSw/edit?usp=sharing
+
+📝 Pontuação da implementação: 10 pontos.
+
+Encontro síncrono realizado em 09/11/2021:
+🎬 link em breve...
+___________________________________________
+MATERIAL EXTRA SOBRE NORMALIZAÇÃO
+Objetivos:
+- Entender os fundamentos das dependências funcionais.
+- Compreender o processo de normalização de bancos de dados relacionais: primeira forma normal - 1ªFN, segunda forma normal - 2ªFN e terceira forma normal - 3ªFN. Observação: existem mais formas normais, contudo, para a disciplina de IAAD é suficiente abordarmos até a 3ª FN.
+
+Videoaula da Profa. Roberta (Revisão e Exercícios de Normalização)
+🎬 https://drive.google.com/file/d/18r3Ks1RmWsVAwLiCiGHfvYhW6X0reCsn/view?usp=sharing
+
+Videoaulas da Profa. Sarajane Peres - UNIVESP
+🎬 Parte 1: https://youtu.be/1Pcgwf5q9d4
+🎬 Parte 2: https://youtu.be/KuakqxxghF8
+🎬 Parte 3: https://youtu.be/Bt4UzD6yjF4
+🎬 Parte 4: https://youtu.be/pIvuT6YMtDI
+
+📖 Leitura do Capítulo 15 (páginas 337 a 363) do livro 'Sistemas de Banco de Dados', 6ª Edição, de Ramez Elmasri e Shamkant Navathe.
+
+	
+	
+</details>
