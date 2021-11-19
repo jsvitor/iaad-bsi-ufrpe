@@ -49,7 +49,7 @@ bancos de dados. 5a Ed. Rio de Janeiro: Elsevier, 2014. 328 p. ISBN 978853526445
 
 </details>  
 
-## Semana 01 à 02
+## Semana 01 à 02 → Introdução
 <details>
   <summary>Curadoria da Profa. Roberta Macêdo 🐱‍🚀</summary>
     
@@ -79,7 +79,7 @@ Bons estudos!
 
 </details>
 
-## Semana 03 à 04
+## Semana 03 à 04 → Modelo de Banco de Dados Relacional
 <details>
   <summary>Curadoria da Profa. Roberta Macêdo 🐱‍🚀</summary>
 
@@ -126,7 +126,7 @@ Bons estudos!
 
 </details>
 
-## Semana 05 à 06
+## Semana 05 à 06 → Structured Query Language - SQL
 <details>
   <summary>Curadoria da Profa. Roberta Macêdo 🐱‍🚀</summary>
   
@@ -161,7 +161,7 @@ Bons estudos!
 </details>
 
 
-## Semana 07 à 08
+## Semana 07 à 08 → Modelagem de dados, Engenharia Reversa e Álgebra Relacional
 
 <details>
 
@@ -173,7 +173,7 @@ Bons estudos!
 
 - [x] Aprender a especificar consultas da Álgebra Relacional usando as operações unárias, binárias e com base na teoria dos conjuntos.
 
-- [ ] Realizar a atividade avaliativa.
+- [x] Realizar a atividade avaliativa.
 
   
 
@@ -303,7 +303,7 @@ Bons estudos!
 
 </details>
 
-## Semana 09 à 10
+## Semana 09 à 10 → Seminário sobre NoSQL
 
 <details>
   <summary>Orientações da Profa. Roberta Macêdo 🐱‍🚀</summary>
@@ -348,7 +348,7 @@ Recomendação: fiquem atentos à qualidade do vídeo e áudio do seminário, a 
 </details>
 
 
-## Semana 11 a 13 → Implementação
+## Semana 11 à 13 → Implementação de Sistema
 
 <details>
   <summary>Orientações da Profa. Roberta Macêdo 🐱‍🚀</summary>
