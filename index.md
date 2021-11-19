@@ -11,6 +11,3 @@
 > * Dados semiestruturados;
 > * Banco de Dados NoSQL;
 > * Database as a Service (DaaS).
-
-
-## Atividade 4
