@@ -35,7 +35,7 @@
 > 1. ELMASRI, Ramez; NAVATHE, Shamkant B. Sistemas de banco de dados. 7a ed. São Paulo: Pearson, 2018, 1152 p. ISBN 978-8543025001.
 > 2. SILBERSCHATZ, Abraham; KORTH, Henry F; SUDARSHAN, S. Sistema de banco de dados. 6a ed. GEN LTC, 2012. 904 p. ISBN 978-8535245356.
 > 3. DATE, C. J. Introdução a sistemas de bancos de dados. Rio de Janeiro: Elsevier, 2003. 865 p. ISBN 9788535212730.
-
+>
 > #### COMPLEMENTAR:
 >
 > 1. RAMAKRISHNAN, Raghu; GEHRKE, Johannes. Sistemas de gerenciamento de banco de dados. 3a ed.
