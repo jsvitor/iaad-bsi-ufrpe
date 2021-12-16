@@ -1,5 +1,5 @@
 # 📑 Introdução ao Armazenamento e Análise de Dados (IAAD)
-
+Por [José Vitor](https://github.com/jsvitor)
 > ### Sinopse do Conteúdo
 > * Sistemas de Gerenciamento de Bancos de Dados (SGBD);
 > * Modelo Conceitual;
