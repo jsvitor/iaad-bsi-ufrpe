@@ -368,7 +368,7 @@ Equipes formadas por estudantes que estão cursando a disciplina Projeto 3 neste
 * Estudar o material extra sobre o processo de Normalização, cujos links estão indicados abaixo. Aplicar o processo de Normalização (até a 3ª FN). 
 
 #### SITUAÇÃO 2: 
-> Equipes formadas por estudantes que NÃO estão cursando a disciplina Projeto 3 e não cursaram nos período anteriores.
+Equipes formadas por estudantes que NÃO estão cursando a disciplina Projeto 3 e não cursaram nos período anteriores.
 
 * Implementar um sistema computacional baseado no esquema de banco de dados “Clínicas Médicas” OU “Publicações Científicas”, utilizando o BD RELACIONAL MYSQL. Observação: o esquema “Clínicas Médicas” foi utilizado nas atividades 2 e 3, já o esquema “Publicações Científicas” foi utilizado na atividade 4.
 * Estudar o material extra sobre o processo de Normalização, cujos links estão indicados abaixo. Como os esquemas “Clínicas Médicas” e “Publicações Científicas” já se encontram normalizados, cada equipe deverá explicar no vídeo o porquê do esquema escolhido já está normalizado até a 3ª Forma Normal.
@@ -397,11 +397,13 @@ Encontro síncrono realizado em 09/11/2021:
 ___________________________________________
 
 MATERIAL EXTRA SOBRE NORMALIZAÇÃO
+
 Objetivos:
+
 * Entender os fundamentos das dependências funcionais.
 * Compreender o processo de normalização de bancos de dados relacionais: primeira forma normal - 1ªFN, segunda forma normal - 2ªFN e terceira forma normal - 3ªFN. Observação: existem mais formas normais, contudo, para a disciplina de IAAD é suficiente abordarmos até a 3ª FN.
 
-Videoaula da Profa. Roberta (Revisão e Exercícios de Normalização)
+**Videoaula da Profa. Roberta (Revisão e Exercícios de Normalização)**
 * https://drive.google.com/file/d/18r3Ks1RmWsVAwLiCiGHfvYhW6X0reCsn/view?usp=sharing
 
 Videoaulas da Profa. Sarajane Peres - UNIVESP
@@ -410,7 +412,7 @@ Videoaulas da Profa. Sarajane Peres - UNIVESP
 * Parte 3: https://youtu.be/Bt4UzD6yjF4
 * Parte 4: https://youtu.be/pIvuT6YMtDI
 
-📖 Leitura do Capítulo 15 (páginas 337 a 363) do livro 'Sistemas de Banco de Dados', 6ª Edição, de Ramez Elmasri e Shamkant Navathe.
+**📖 Leitura do Capítulo 15 (páginas 337 a 363) do livro 'Sistemas de Banco de Dados', 6ª Edição, de Ramez Elmasri e Shamkant Navathe.**
 
 	
 	
