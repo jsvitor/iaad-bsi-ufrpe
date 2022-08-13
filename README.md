@@ -120,8 +120,15 @@ Bons estudos!
 <details>
   <summary>Configuração do ambiente MySQL em container Docker</summary>
   
+  #### Na raiz do projeto, execute:
+  ```bash
+  docker-compose up -d
+  ```
+
+  #### Para acessar container execute:
+  <!-- user can be root or adminer -->
   <code>
-    $ docker exec -it mysql-local-db mysql -uroot -pQaz123
+    $ docker exec -it mysql-local-db mysql -uroot -pmysql_native_password
   </code>
 
 </details>
